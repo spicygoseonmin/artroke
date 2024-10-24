@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
 }
-#cateBar{
+#cateBar {
   display: none;
 }
 .logo {
@@ -270,7 +270,7 @@
   padding: 5px 0;
   font-size: 16px;
 }
-#noticeNone li p{
+#noticeNone li p {
   font-size: 14px;
 }
 #teachList {
@@ -284,17 +284,16 @@
   width: 60px;
 }
 @media screen and (max-width: 768px) {
-  #searchList{
+  #searchList {
     position: relative;
     display: block;
     left: 0;
     top: 0;
     margin-left: 66px;
   }
-  #cateBarClick {
-    width: 768px;
-    height: 100%;
-    position: relative;
+  /* #cateBarClick {
+    width: 100%;
+    position: fixed;
     display: block;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
@@ -302,23 +301,87 @@
     z-index: 99999;
     padding-bottom: 20px;
     padding-top: 25px;
+    top: 0;
+  } */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
+  #cateBarClick {
+    display: none; /* 처음에는 숨겨진 상태 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* 애니메이션을 위한 트랜지션 */
+    z-index: 9999;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  #cateBarClick.slide-down {
+    display: block;
+    animation: slideDown 0.5s ease forwards;
+  }
+
+  #cateBarClick.slide-up {
+    animation: slideUp 0.5s ease forwards;
+  }
+
+  #cateBarClick {
+    display: none; /* 처음에는 숨겨진 상태 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* 애니메이션을 위한 트랜지션 */
+    z-index: 9999;
+  }
+
+  #cateBarClick.active {
+    display: block; /* 보이도록 설정 */
+    animation: slideDown 0.5s ease forwards; /* slideDown 애니메이션 실행 */
+  }
+
   #cateBarClickMenuTop {
     position: relative;
     display: flex;
     padding-top: 20px;
     margin-bottom: 70px;
-  
   }
-  #cateBarClickMenuTop h2{
+  #cateBarClickMenuTop h2 {
     position: relative;
     left: 40%;
     transform: translateX(-45%);
   }
-  #catelistHard{
+  #catelistHard {
     display: none;
   }
-  .catelistHard{
+  .catelistHard {
     margin-bottom: 5px;
   }
   #cateLeft {
@@ -327,48 +390,44 @@
     padding-top: 7px;
     margin-left: 40px;
   }
-  #cateAll{
+  #cateAll {
     margin-left: 30px;
   }
-  
-  #cateline{
+
+  #cateline {
     border: 0.5px solid #eee;
     margin: 10px 0;
   }
-  #cateNomal{
+  #cateNomal {
     position: relative;
     display: block;
   }
-  #cateNomalListLeft{
+  #cateNomalListLeft {
     display: block;
     float: left;
     width: 100px;
     line-height: 25px;
   }
-  #cateNomalListRight{
+  #cateNomalListRight {
     margin-left: 40%;
     width: 200px;
     line-height: 25px;
   }
-  #cateHardList{
+  #cateHardList {
     display: none;
   }
-  #catelisthard{
+  #catelisthard {
     margin-bottom: 50px;
   }
-  #cateAllList{
+  #cateAllList {
     display: flex;
     position: relative;
     display: none;
     margin-bottom: 50px;
   }
-  #cateLeft img{
+  #cateLeft img {
     width: 100%;
     height: 100%;
-  }
-  #cateBar {
-    position: relative;
-    display: none;
   }
 
   .logo {
@@ -380,8 +439,8 @@
     padding-left: 10px;
   }
   #cateBar {
+    font-size: 30px;
     display: block;
-    padding-left: 40px;
   }
   #searchDelete {
     position: fixed;
@@ -406,7 +465,6 @@
     justify-content: center;
     font-weight: 700;
     width: 130px;
-
   }
   #searchAfter {
     position: absolute;
@@ -494,7 +552,7 @@
     width: 768px !important;
     position: absolute;
     top: 0;
-    right: -31px;
+    right: -30px;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
@@ -610,11 +668,9 @@
   }
 }
 @media screen and (max-width: 320px) {
-
   #cateBarClick {
-    width: 320px;
-    height: 100%;
-    position: relative;
+    width: 100%;
+    position: fixed;
     display: block;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
@@ -622,32 +678,35 @@
     z-index: 99999;
     padding-bottom: 20px;
     padding-top: 5px;
+    top: 0;
+    height: 60%;
+    overflow-y: auto;
   }
   #cateBarClickMenuTop {
     position: relative;
     display: flex;
     padding-top: 20px;
     margin-bottom: 70px;
-  
   }
-  #cateAll h3{
+  #cateAll h3 {
     font-size: 14px;
   }
-  #cateNomalListLeft li,#cateNomalListRight li{
+  #cateNomalListLeft li,
+  #cateNomalListRight li {
     font-size: 13px;
   }
 
-  .catelistHard{
+  .catelistHard {
     font-size: 14px;
     padding-left: 5px;
   }
-  #cateBarClickMenuTop h2{
+  #cateBarClickMenuTop h2 {
     position: relative;
     left: 40%;
     transform: translateX(-45%);
     padding-top: 5px;
   }
-  #catelistHard{
+  #catelistHard {
     display: none;
   }
   #cateLeft {
@@ -656,47 +715,43 @@
     padding-top: 7px;
     margin-left: 15px;
   }
-  #cateAll{
+  #cateAll {
     margin-left: 20px;
   }
-  
-  #cateline{
+
+  #cateline {
     border: 0.5px solid #eee;
     margin: 10px 0;
   }
-  #cateNomal{
+  #cateNomal {
     position: relative;
     display: block;
   }
-  #cateNomalListLeft{
+  #cateNomalListLeft {
     display: block;
     float: left;
     width: 100px;
   }
-  #cateNomalListRight{
-    margin-left:50%;
+  #cateNomalListRight {
+    margin-left: 50%;
     width: 200px;
   }
-  #cateHardList{
+  #cateHardList {
     display: none;
   }
-  #catelisthard{
+  #catelisthard {
     margin-bottom: 50px;
   }
-  #cateAllList{
+  #cateAllList {
     display: flex;
     position: relative;
     display: none;
     margin-bottom: 50px;
     padding-left: 5px;
   }
-  #cateLeft img{
+  #cateLeft img {
     width: 100%;
     height: 100%;
-  }
-  #cateBar {
-    position: relative;
-    display: none;
   }
 
   .container {
@@ -726,8 +781,10 @@
   #cateBar {
     display: block;
     padding: 0;
+    font-size: 23px;
   }
   #searchShow {
+    font-size: 23px;
     top: 60%;
     left: 0;
     position: relative;
@@ -859,7 +916,6 @@
     gap: 20px;
     text-align: center;
     font-size: 12px;
-
   }
 
   #notice {
@@ -883,12 +939,12 @@
   #noticeNone li {
     padding: 3px 0;
   }
-  #noticeNone li p{
+  #noticeNone li p {
     font-size: 12px;
   }
   #InterestedList {
     margin-left: 15px;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 35px;
   }
   #InterestedList p {
