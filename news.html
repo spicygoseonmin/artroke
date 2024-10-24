@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <meta name="author" content="아트로크" />
+    <meta name="title" content="아트로크:: 빠르고 쉬운 실시간 온라인 미술강의 사이트" />
+    <meta name="keywords" content="강의, 온라인강의, 실기강의, 소묘, 미술강사, 입시미술, 취미미술, 미술강의, 입시디자인, 기초디자인, 포토샵, 수공예, 아동미술" />
+    <meta name="description" content="사람과 자연 모두에 건강한 먹을거리와 생활용품을 생산·공급 합니다" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="아트로크:: 빠르고 쉬운 실시간 온라인 미술강의 사이트" />
+    <meta property="og:description" content="사람과 자연 모두에 건강한 먹을거리와 생활용품을 생산·공급 합니다" />
+    <meta property="og:site_name" content="한살림 장보기" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://artroke.vercel.app/" />
+    <meta property="og:image" content="https://artroke.vercel.app/images/logo/logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="아트로크:: 빠르고 쉬운 실시간 온라인 미술강의 사이트" />
+    <meta name="twitter:description" content="사람과 자연 모두에 건강한 먹을거리와 생활용품을 생산·공급 합니다" />
+    <meta name="twitter:image" content="https://artroke.vercel.app/images/logo/logo.png" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>아트로크</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contest_news.css">
+
+    <!-- js -->
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Swiper 적용 -->
+    <!-- link Swiper's css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <header class="header">
+      <div class="inner">
+        <div class="header-left">
+          <i class="fa-solid fa-bars" id="cateBar"></i>
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo/logo.png" alt="로고이미지" />
+            </a>
+          </div>
+          <ul class="menu">
+            <li class="open-cate">
+              <a href="#"> 강의 카테고리<i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li>
+              <a href="#">커뮤니티</a>
+            </li>
+            <li>
+              <a href="#">뉴스</a>
+            </li>
+            <li>
+              <a href="#">강사진소개</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <!-- 검색창 -->
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass" id="searchShow"></i>
+          </div>
+          <form style="display: none" id="searchDelete">
+            <label>
+              <div class="search-move" id="searchMove">
+                <input type="text" placeholder="검색어를 입력하세요" id="searchBar" />
+                <i class="fa-solid fa-magnifying-glass" id="searchAfter"></i>
+                <i class="fa-solid fa-xmark" id="searchXmark"></i>
+              </div>
+            </label>
+            <div id="searchNow">
+              <p>최근 검색어</p>
+              <ul id="popularKeywords">
+                <p>실시간 인기 검색어</p>
+                <div id="searchList">
+                  <div id="li">
+                    <li><span>1</span> 프로크리에이트</li>
+                    <li><span>5</span> 피그마</li>
+                  </div>
+                  <div id="li">
+                    <li><span>2</span> 일러스트</li>
+                    <li><span>6</span> 입시미술</li>
+                  </div>
+                  <div id="li">
+                    <li><span>3</span> 소묘</li>
+                    <li><span>7</span> 나무13</li>
+                  </div>
+                  <div id="li">
+                    <li><span>4</span> 아이패드</li>
+                    <li><span>8</span> 이모티콘</li>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </form>
+          <!-- 로그인 -->
+          <ul class="user-section">
+            <!-- 로그인 버튼 -->
+            <li id="login-btn">
+              <a href="#" id="loginText"> 로그인 </a>
+            </li>
+            <i class="fa-solid fa-user" id="loginIcon"></i>
+            <!-- 로그인했을떄 유저메뉴 -->
+            <i class="fa-solid fa-user" style="display: none"></i>
+            <li id="user-profile">
+              <!-- 유저 아이디 출력 -->
+            </li>
+          </ul>
+          <!-- 아이콘 클릭 시 나타나는 컨테이너 -->
+          <div id="iconContainer" style="display: none">
+            <!-- 컨테이너 내용 -->
+            <div id="userInfoTop">
+              <div id="userInfo">
+                <i class="fa-solid fa-chevron-left" id="userInfoDelete"></i>
+                <div id="userInfoNickName">
+                  <!-- JS로 닉네임 출력 -->
+                </div>
+                <i class="fa-solid fa-gear" id="xhqslqkznl"></i>
+              </div>
+              <div id="userInfoSecond">
+                <i class="fa-solid fa-user"></i>
+                <div id="userInfoId">
+                  <!-- JS로 아이디 출력 -->
+                </div>
+                <div id="userInfoEmail">
+                  <!-- JS로 이메일 출력 -->
+                </div>
+              </div>
+            </div>
+            <div id="userInfoMid">
+              <div id="userInfoNotice">
+                <ul>
+                  <li id="notice">알림<i class="fa-solid fa-chevron-down"></i></li>
+                  <div id="line"></div>
+                  <ul id="noticeNone" style="display: none">
+                    <li><p>알림내용</p></li>
+                    <li><p>알림내용</p></li>
+                    <li><p>알림내용</p></li>
+                  </ul>
+                </ul>
+                <ul>
+                  <li id="myTeach">나의 강좌<i class="fa-solid fa-chevron-down"></i></li>
+                  <div id="line"></div>
+                  <ul id="teachList" style="display: none">
+                    <li>
+                      수강 강의 이름
+                      <p>다시보기</p>
+                    </li>
+                    <li>
+                      수강 강의 이름
+                      <p>다시보기</p>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <div id="InterestedList">
+                <p>관심목록</p>
+                <div id="line"></div>
+                <div id="QandA">문의 / 답변</div>
+              </div>
+              <div id="logOut">
+                <p>로그아웃</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cate-background"></div>
+      <div class="cate-wrap">
+        <div class="cate-box">
+          <div class="inner">
+            <ul class="category">
+              <!-- 일반 강의 카테고리 -->
+              <li class="class-cate-title">일반 강의<i class="fa-solid fa-angle-right"></i></li>
+              <li>
+                <ul class="class-cate-list">
+                  <li><a href="#">소묘</a></li>
+                  <li><a href="#">수채화</a></li>
+                  <li><a href="#">유화</a></li>
+                  <li><a href="#">아크릴화</a></li>
+                  <li><a href="#">디지털 드로잉</a></li>
+                  <li><a href="#">조소/모델링</a></li>
+                  <li><a href="#">만화/애니메이션</a></li>
+                  <li><a href="#">아동 미술</a></li>
+                  <li><a href="#">공예</a></li>
+                  <li><a href="#">포토샵/일러스트레이터</a></li>
+                  <li><a href="#">이모티콘</a></li>
+                </ul>
+              </li>
+              <!-- 실기 강의 카테고리 -->
+              <li class="class-cate-title">실기 강의<i class="fa-solid fa-angle-right"></i></li>
+              <li>
+                <ul class="class-cate-list">
+                  <li><a href="#">소묘</a></li>
+                  <li><a href="#">서양화</a></li>
+                  <li><a href="#">동양화</a></li>
+                  <li><a href="#">디자인</a></li>
+                  <li><a href="#">조소</a></li>
+                  <li><a href="#">만화/애니메이션</a></li>
+                  <li><a href="#">포토샵/일러스트레이터</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 반응형 강의 카테고리 -->
+    <div id="cateBarClick" style="display: none">
+      <div id="cateBarClickMenuTop">
+        <div id="cateLeft">
+          <img src="images/left.png" alt="강의카테고리 왼쪽화살표" />
+        </div>
+        <h2>강의 카테고리</h2>
+      </div>
+      <div id="cateAll">
+        <ul>
+          <li>
+            <h3 id="cateNomal">
+              일반강의
+              <i class="fa-solid fa-chevron-down"></i>
+            </h3>
+            <div id="cateline"></div>
+            <div id="cateAllList">
+              <ul id="cateNomalListLeft">
+                <li>소묘</li>
+                <li>수채화</li>
+                <li>유화</li>
+                <li>아크릴화</li>
+                <li>디지털 드로잉</li>
+                <li>조소/모델링</li>
+              </ul>
+              <ul id="cateNomalListRight">
+                <li>만화 / 애니메이션</li>
+                <li>공예</li>
+                <li>포토샵 / 일러스트레이터</li>
+                <li>이모티콘 제작</li>
+                <li>종이접기</li>
+                <li>뜨게질</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3 id="cateHard">
+              실기강의
+              <i class="fa-solid fa-chevron-down"></i>
+            </h3>
+          </li>
+          <div id="cateline"></div>
+          <li class="catelistHard" style="display: none">소묘</li>
+          <li class="catelistHard" style="display: none">서양화</li>
+          <li class="catelistHard" style="display: none">동양화</li>
+          <li class="catelistHard" style="display: none">디자인</li>
+          <li class="catelistHard" style="display: none">조소</li>
+          <li class="catelistHard" style="display: none">만화/애니메이션</li>
+          <li class="catelistHard" id="catelisthard" style="display: none">포토샵/일러스트레이터</li>
+        </ul>
+        <h3 id="academy">학원소개</h3>
+        <div id="cateline"></div>
+        <h3>커뮤니티</h3>
+        <div id="cateline"></div>
+        <h3>뉴스</h3>
+        <div id="cateline"></div>
+        <h3>강사진소개</h3>
+      </div>
+    </div>
+    <!-- 공모전 배너 -->
+    <div id="contestBanner">
+        <img src="images/banner/news_banner.jpg" alt="공모전배너이미지">
+    </div>
+    <div id="contestNotice">
+        <h2>공모전 / 대회 알림 받기</h2>
+    </div>
+    <!-- 공모전 강의 공고 -->
+    <div id="constestLectureWrap">  
+        <div id="constestLectureWrapTop">
+            <ul id="contestFlex">
+                <li>
+                    <div id="contestBox">
+                        <p>공모전 이름</p>
+                        <div id="contestImg">
+                            <img src="images/news/contest_class/1.png" alt="공모전이미지1">
+                            <div id="contestDate">
+                                <span>2024-12-12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="contestBox">
+                        <p>공모전 이름</p>
+                        <div id="contestImg">
+                            <img src="images/news/contest_class/2.png" alt="공모전이미지1">
+                            <div id="contestDate">
+                                <span>2024-12-12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="contestBox">
+                        <p>공모전 이름</p>
+                        <div id="contestImg">
+                            <img src="images/news/contest_class/3.png" alt="공모전이미지1">
+                            <div id="contestDate">
+                                <span>2024-12-12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="constestLectureWrapBottom">
+            <ul id="contestFlex">
+                <li>
+                    <div id="contestBox">
+                        <p>공모전 이름</p>
+                        <div id="contestImg">
+                            <img src="images/news/contest_class/4.png" alt="공모전이미지1">
+                            <div id="contestDate">
+                                <span>2024-12-12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="contestBox">
+                        <p>공모전 이름</p>
+                        <div id="contestImg">
+                            <img src="images/news/contest_class/5.png" alt="공모전이미지1">
+                            <div id="contestDate">
+                                <span>2024-12-12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div id="contestBox">
+                        <p>공모전 이름</p>
+                        <div id="contestImg">
+                            <img src="images/news/contest_class/6.png" alt="공모전이미지1">
+                            <div id="contestDate">
+                                <span>2024-12-12</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

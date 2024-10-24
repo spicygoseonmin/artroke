@@ -261,7 +261,7 @@ ul li label {
     padding-left: 30px;
   }
   #sign-form {
-    width: 90%;
+    width: 85%;
     margin: auto;
     position: relative;
     display: block;
@@ -324,8 +324,8 @@ ul li label {
     border: 1px solid black;
   }
   h2 {
-    margin: 25px 0 15px 0;
-    font-size: 20px;
+    margin: 40px 0 15px 0;
+    font-size: 15px;
   }
   #certified {
     width: 130px;
