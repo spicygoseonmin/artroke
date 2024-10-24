@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://js.tosspayments.com/v1/payment-widget"></script>
+    <script src="https://js.tosspayments.com/v2/standard"></script>
 
     <!-- SEO -->
     <meta name="author" content="아트로크" />
@@ -36,7 +36,8 @@
 
     <script src="js/my_menu.js"></script>
     <script src="js/my_menu_jq.js"></script>
-    <!-- <script src="js/my_menu_pay.js"></script> -->
+    <script src="js/my_menu_thumbnail.js"></script>
+    <script src="js/my_menu_pay.js"></script>
     <!-- Swiper 적용 -->
     <!-- link Swiper's css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -295,7 +296,6 @@
                       <div class="class_title">팀플로 성장하는 발상과 표현 클래스 5기 <span>과제제출 미완</span></div>
                       <div class="class_s_day">2025. 12. 01 까지 제출</div>
                     </div>
-                    <!-- 제출란 -->
                     <div class="middle">
                       <div class="work_title">과제: 식물의 구조를 응용하여 발상과 디자인 스케치 구상하기</div>
                       <a href="#">
@@ -309,20 +309,22 @@
                     </div>
                     <div class="submit_project_work">
                       <div class="submit_project_work_wrap">
-                        <form class="project_work_form">
-                          <label for="title">제목</label>
-                          <input type="text" class="title" name="title" required />
-                          <label for="memo">메모</label>
-                          <input type="text" class="memo" name="memo" />
-                          <label for="work">이미지 제출</label>
-                          <input type="file" class="work" name="work" required />
-                          <button type="submit" class="p_w_sub_btn">과제 제출하기</button>
+                        <form class="project_work_form" enctype="multipart/form-data" onsubmit="return false;">
+                          <div class="form_wrap">
+                            <label for="title">제목</label>
+                            <input type="text" class="title" name="title" required />
+                            <label for="memo">메모</label>
+                            <input type="text" class="memo" name="memo" />
+                            <label for="work">이미지 제출</label>
+                            <input type="file" class="work" name="work" accept="image/*" required onchange="previewImage(this)" multiple />
+                            <button type="submit" class="p_w_sub_btn">과제 제출하기</button>
+                          </div>
+                          <div class="img_thumbnail">
+                            <ul class="thumbnail_list">
+                              <!-- js 출력 -->
+                            </ul>
+                          </div>
                         </form>
-                        <div class="img_thumbnail">
-                          <ul>
-                            <!-- js 출력 -->
-                          </ul>
-                        </div>
                       </div>
                     </div>
                   </li>
@@ -331,7 +333,6 @@
                       <div class="class_title">팀플로 성장하는 발상과 표현 클래스 5기 <span>과제제출 미완</span></div>
                       <div class="class_s_day">2025. 12. 01 까지 제출</div>
                     </div>
-                    <!-- 제출란 -->
                     <div class="middle">
                       <div class="work_title">과제: 식물의 구조를 응용하여 발상과 디자인 스케치 구상하기</div>
                       <a href="#">
@@ -344,15 +345,24 @@
                       <div class="class_sd_submit">제출하기</div>
                     </div>
                     <div class="submit_project_work">
-                      <form class="project_work_form">
-                        <label for="title">제목</label>
-                        <input type="text" class="title" name="title" required />
-                        <label for="memo">메모</label>
-                        <input type="text" class="memo" name="memo" />
-                        <label for="work">이미지 제출</label>
-                        <input type="file" class="work" name="work" required />
-                        <button type="submit">과제 제출하기</button>
-                      </form>
+                      <div class="submit_project_work_wrap">
+                        <form class="project_work_form" enctype="multipart/form-data" onsubmit="return false;">
+                          <div class="form_wrap">
+                            <label for="title">제목</label>
+                            <input type="text" class="title" name="title" required />
+                            <label for="memo">메모</label>
+                            <input type="text" class="memo" name="memo" />
+                            <label for="work">이미지 제출</label>
+                            <input type="file" class="work" name="work" accept="image/*" required onchange="previewImage(this)" multiple />
+                            <button type="submit" class="p_w_sub_btn">과제 제출하기</button>
+                          </div>
+                          <div class="img_thumbnail">
+                            <ul class="thumbnail_list">
+                              <!-- js 출력 -->
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </li>
                   <li>
@@ -360,7 +370,6 @@
                       <div class="class_title">팀플로 성장하는 발상과 표현 클래스 5기 <span>과제제출 미완</span></div>
                       <div class="class_s_day">2025. 12. 01 까지 제출</div>
                     </div>
-                    <!-- 제출란 -->
                     <div class="middle">
                       <div class="work_title">과제: 식물의 구조를 응용하여 발상과 디자인 스케치 구상하기</div>
                       <a href="#">
@@ -373,15 +382,24 @@
                       <div class="class_sd_submit">제출하기</div>
                     </div>
                     <div class="submit_project_work">
-                      <form class="project_work_form">
-                        <label for="title">제목</label>
-                        <input type="text" class="title" name="title" required />
-                        <label for="memo">메모</label>
-                        <input type="text" class="memo" name="memo" />
-                        <label for="work">이미지 제출</label>
-                        <input type="file" class="work" name="work" required />
-                        <button type="submit">과제 제출하기</button>
-                      </form>
+                      <div class="submit_project_work_wrap">
+                        <form class="project_work_form" enctype="multipart/form-data" onsubmit="return false;">
+                          <div class="form_wrap">
+                            <label for="title">제목</label>
+                            <input type="text" class="title" name="title" required />
+                            <label for="memo">메모</label>
+                            <input type="text" class="memo" name="memo" />
+                            <label for="work">이미지 제출</label>
+                            <input type="file" class="work" name="work" accept="image/*" required onchange="previewImage(this)" multiple />
+                            <button type="submit" class="p_w_sub_btn">과제 제출하기</button>
+                          </div>
+                          <div class="img_thumbnail">
+                            <ul class="thumbnail_list">
+                              <!-- js 출력 -->
+                            </ul>
+                          </div>
+                        </form>
+                      </div>
                     </div>
                   </li>
                 </ul>
@@ -395,16 +413,17 @@
             <div class="mpls mp">
               <div class="mpls_wrap">
                 <!-- 결재수단 등록 -->
-                <div class="top">
-                  <div class="payList">
-                    <!-- 결제 UI, 이용약관 UI 영역 -->
-                    <div id="payment-method"></div>
-                    <div id="agreement"></div>
-                    <!-- 결제하기 버튼 -->
-                    <button id="payment-button">결재 수단 등록</button>
-                  </div>
+                <!-- 할인 쿠폰 -->
+                <div>
+                  <input type="checkbox" id="coupon-box" />
+                  <label for="coupon-box"> 5,000원 쿠폰 적용 </label>
                 </div>
-                <div class="bottom"></div>
+                <!-- 결제 UI -->
+                <div id="payment-method"></div>
+                <!-- 이용약관 UI -->
+                <div id="agreement"></div>
+                <!-- 결제하기 버튼 -->
+                <button class="button" id="payment-button" style="margin-top: 30px">결제하기</button>
               </div>
             </div>
             <!-- 포인트 -->
