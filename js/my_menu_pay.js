@@ -1,29 +1,62 @@
-// 토스 페이
-const coupon = document.getElementById("coupon-box");
-const button = document.getElementById("payment-button");
-const amount = 50000;
+main();
 
-// 구매자의 고유 아이디를 불러와서 customerKey로 설정하세요.
-// 이메일・전화번호와 같이 유추가 가능한 값은 안전하지 않습니다.
-const widgetClientKey = "test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm";
-const customerKey = "o6oZTVeixwIgyRubjs-F-";
-const paymentWidget = PaymentWidget(widgetClientKey, customerKey); // 회원 결제
-// const paymentWidget = PaymentWidget(widgetClientKey, PaymentWidget.ANONYMOUS) // 비회원 결제
-
-const paymentMethodWidget = paymentWidget.renderPaymentMethods("#payment-method", { value: amount }, { variantKey: "DEFAULT" });
-
-paymentWidget.renderAgreement("#agreement", { variantKey: "AGREEMENT" });
-
-button.addEventListener("click", function () {
-  // 결제를 요청하기 전에 orderId, amount를 서버에 저장하세요.
-  // 결제 과정에서 악의적으로 결제 금액이 바뀌는 것을 확인하는 용도입니다.
-  paymentWidget.requestPayment({
-    orderId: "w9Gv2zpCNrt_-aUg7xp6z",
-    orderName: "토스 티셔츠 외 2건",
-    successUrl: window.location.origin + "/success",
-    failUrl: window.location.origin + "/fail",
-    customerEmail: "customer123@gmail.com",
-    customerName: "김토스",
-    customerMobilePhone: "01012341234",
+async function main() {
+  const button = document.getElementById("payment-button");
+  const coupon = document.getElementById("coupon-box");
+  // ------  결제위젯 초기화 ------
+  const clientKey = "test_gck_docs_Ovk5rk1EwkEbP0W43n07xlzm";
+  const tossPayments = TossPayments(clientKey);
+  // 회원 결제
+  const customerKey = "W7A9_wm3JsYeW6UfTxhyj";
+  const widgets = tossPayments.widgets({
+    customerKey,
   });
-});
+  // 비회원 결제
+  // const widgets = tossPayments.widgets({ customerKey: TossPayments.ANONYMOUS });
+
+  // ------ 주문의 결제 금액 설정 ------
+  await widgets.setAmount({
+    currency: "KRW",
+    value: 50000,
+  });
+
+  await Promise.all([
+    // ------  결제 UI 렌더링 ------
+    widgets.renderPaymentMethods({
+      selector: "#payment-method",
+      variantKey: "DEFAULT",
+    }),
+    // ------  이용약관 UI 렌더링 ------
+    widgets.renderAgreement({ selector: "#agreement", variantKey: "AGREEMENT" }),
+  ]);
+
+  // ------  주문서의 결제 금액이 변경되었을 경우 결제 금액 업데이트 ------
+  coupon.addEventListener("change", async function () {
+    if (coupon.checked) {
+      await widgets.setAmount({
+        currency: "KRW",
+        value: 50000 - 5000,
+      });
+
+      return;
+    }
+
+    await widgets.setAmount({
+      currency: "KRW",
+      value: 50000,
+    });
+  });
+
+  // ------ '결제하기' 버튼 누르면 결제창 띄우기 ------
+  button.addEventListener("click", async function () {
+    await widgets.requestPayment({
+      orderId: "RyFG1Rd56sH3W2aXDnLMW",
+      orderName: "토스 티셔츠 외 2건",
+      successUrl: window.location.origin + "/success.html",
+      failUrl: window.location.origin + "/fail.html",
+      customerEmail: "customer123@gmail.com",
+      customerName: "김토스",
+      customerMobilePhone: "01012341234",
+    });
+  });
+}

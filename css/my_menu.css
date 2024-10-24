@@ -179,6 +179,9 @@
   font-weight: 600;
   color: #ff370b;
 }
+.sct > .sctList > ul > li > .top > .class_title > span.color_done{
+  color: #577cfd;
+}
 .sct > .sctList > ul > li > .top > .class_s_day {
   font-size: 14px;
 }
@@ -197,6 +200,9 @@
   font-weight: 600;
   color: #ff370b;
   cursor: pointer;
+}
+.sct > .sctList > ul > li > .bottom > .class_sd_submit.color_done{
+  color: #577cfd;
 }
 
 .sct > .sctList > ul > li > .middle {
@@ -220,6 +226,8 @@
   font-size: 14px;
   color: #8f8f8f;
 }
+
+/* 과제 제출 */
 .submit_project_work {
   width: 100%;
   height: 300px;
@@ -230,12 +238,17 @@
   background-color: rgb(0, 0, 0);
   display: none;
 }
-.submit_project_work > .submit_project_work_wrap{
+.submit_project_work > .submit_project_work_wrap {
   width: 100%;
   height: 100%;
   display: flex;
 }
 .submit_project_work > .submit_project_work_wrap > form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.submit_project_work > .submit_project_work_wrap > form > .form_wrap {
   width: 100%;
   max-width: 600px;
   height: 100%;
@@ -246,10 +259,10 @@
   border: 1px solid #00000020;
   background-color: rgb(255, 255, 255);
 }
-.submit_project_work > .submit_project_work_wrap > form > input {
+.submit_project_work > .submit_project_work_wrap > form > .form_wrap > input {
   margin-top: 5px;
 }
-.submit_project_work > .submit_project_work_wrap > form > .p_w_sub_btn {
+.submit_project_work > .submit_project_work_wrap > form > .form_wrap > .p_w_sub_btn {
   padding: 10px;
   margin-top: 80px;
   background-color: #000;
@@ -257,11 +270,35 @@
   border: none;
   border-radius: 5px;
 }
-.submit_project_work > .submit_project_work_wrap > .img_thumbnail {
+.submit_project_work > .submit_project_work_wrap > form > .form_wrap > .p_w_sub_btn:hover {
+  background-color: #1f1f1f;
+}
+.submit_project_work > .submit_project_work_wrap > form > .img_thumbnail {
   width: 100%;
   height: 100%;
-  background-color: #577cfd;
+  background-color: #000000;
 }
+
+/* 제출 파일 썸네일 로드 */
+.img_thumbnail {
+  width: 100%;
+  overflow-y: scroll;
+}
+.img_thumbnail > .thumbnail_list {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 5px;
+}
+.img_thumbnail > .thumbnail_list > li {
+  width: calc(100% / 4 - 4px);
+}
+.img_thumbnail > .thumbnail_list > li > img {
+  width: 100%;
+}
+
 /* 결재수단 ===================================================================================*/
 .mpls {
   width: 100%;
@@ -321,7 +358,7 @@
   /* background-color: #577cfd; */
 }
 .sw_point .swiper-slide {
-  background-color: #ff370b;
+  /* background-color: #ff370b; */
   border-radius: 5px;
   overflow: hidden;
 }
@@ -332,6 +369,9 @@
 @media screen and (max-width: 1232px) {
   .my_page {
     padding: 90px 15px 0 15px;
+  }
+  .sw_point{
+    height: 18.5vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -454,7 +494,7 @@
 
   .sw_point {
     width: 100%;
-    height: 27.1vw;
+    height: 25.1vw;
     max-height: 250px;
     /* background-color: #577cfd; */
   }
@@ -571,7 +611,7 @@
   }
   .sw_point {
     width: 100%;
-    height: 50vw;
+    height: 43.3vw;
     max-height: 250px;
     /* background-color: #577cfd; */
   }

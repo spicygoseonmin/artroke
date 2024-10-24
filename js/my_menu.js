@@ -56,6 +56,14 @@ window.addEventListener("load", function () {
   // 과제 제출 유효성 검사
   const project_work_form = document.querySelectorAll(".project_work_form");
   project_work_form.forEach(function (project_work_forms) {
+    const class_sd_submit = this.document.querySelector(".class_sd_submit");
+    class_sd_submit.addEventListener("click", function () {
+      if (this.innerHTML === `닫기`) {
+        this.innerHTML = `제출하기`; // 원래 텍스트로 바꿔주세요 (예: "열기" 또는 "제출")
+      } else {
+        this.innerHTML = `닫기`;
+      }
+    });
     project_work_forms.addEventListener("submit", function (event) {
       event.preventDefault();
       // 사용자가 입력한 사용자명과 비밀번호를 가져온다
@@ -68,17 +76,6 @@ window.addEventListener("load", function () {
       // console.log(username ,password);
       // 사용자명과 비밀번호의 유효성을 정규 표현식을 사용
       //   사용자명은 영문자와 숫자로만 이루어져야 합니다.하여 확인합니다.
-      const img_thumbnail_ul = document.querySelectorAll(".img_thumbnail > ul");
-      img_thumbnail_ul.forEach(function (uls) {
-        uls.addEventListener("change", function () {
-          const show_img = `
-                <li><img src="${s_p_img}" alt="${s_p_title}"></li>
-          `;
-          this.innerHTML = show_img
-        });
-      });
-
-      img_thumbnail_ul.innerHTML = show_img;
       const subWorks = {
         s_p_title: s_p_title,
         s_p_memo: s_p_memo,
@@ -91,10 +88,22 @@ window.addEventListener("load", function () {
       const usersWork = JSON.parse(localStorage.getItem("usersWork")) || [];
       // 새로운 사용자 객체 newUser 를 이전 사용자 정보에 배열에 (users)를 추가
       usersWork.push(subWorks);
-      // 사용자 정보 배열을 JSON 형식으로 문자열화하고,이를 로컬 스토리지에 users라는 키로 저장
+
       localStorage.setItem("usersWork", JSON.stringify(usersWork));
-      // alert("가입이 완료 되었습니다. 로그인 페이지로 이동합니다.");
-      // window.location.href = "login.html";
+      alert("과제 제출이 완료 되었습니다.");
+      const p_w_sub_btn = document.querySelector(".p_w_sub_btn");
+      p_w_sub_btn.innerHTML = `과제 수정하기`;
+      const closeForm = this.closest(".submit_project_work");
+      closeForm.style.display = "none";
+      const previousSibling = closeForm.previousElementSibling;
+      const class_sd_submit = previousSibling.querySelector(".class_sd_submit");
+      class_sd_submit.innerHTML = "수정하기";
+      class_sd_submit.classList.add("color_done");
+      const main_middle = previousSibling.previousElementSibling;
+      const main_s_pt = main_middle.previousElementSibling;
+      const class_title_span = main_s_pt.querySelector(".class_title > span");
+      class_title_span.innerHTML = `과제제출 완료`;
+      class_title_span.classList.add("color_done");
     });
   });
 });
