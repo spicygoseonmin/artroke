@@ -3,6 +3,9 @@
   .side_padding {
     padding: 15px;
   }
+  .class_menu_title{
+    padding: 0px 8px 10px ;
+  }
 }
 @media screen and (max-width: 1080px) {
   .class-info > .top-info > h1 {
@@ -23,6 +26,9 @@
   .bottom-info {
     flex-direction: column;
   }
+  .bottom-info > .left-info > .tpi {
+    height: 40%;
+  }
   .bottom-info > .right-info {
     width: 100%;
     padding: 0;
@@ -30,6 +36,12 @@
   .class-info > .top-info {
     margin: 0;
     height: 8vw;
+  }
+  .bottom-info > .right-info > .btn_wrap > .pBtn {
+    font-size: 3vw;
+  }
+  .bottom-info > .right-info > .btn_wrap > .fBtn {
+    font-size: 3vw;
   }
   .class_s_goal > .goal > .goalList {
     width: 100%;
@@ -72,6 +84,45 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .bottom-info > .left-info {
+    width: 100%;
+    height: 37vw;
+    border-right: none;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .bottom-info > .left-info > .tpi {
+    height: 40%;
+  }
+  .bottom-info > .left-info > .tpi > .tpii {
+    height: 40px;
+    width: 40px;
+  }
+  .bottom-info > .left-info > .tpi > .tpin {
+    font-size: 3.5vw;
+  }
+  .bottom-info > .left-info > .tci {
+    font-size: 3.3vw;
+    height: 60%;
+    justify-content: space-evenly;
+  }
+  .bottom-info > .right-info > .ptdiv {
+    font-size: 3.5vw;
+  }
+  .class-scroll-info > .menu > .menuList {
+    font-size: 3.5vw;
+    padding: 2vw 0;
+    justify-content: space-around;
+  }
+  .omall{
+    margin: 10vw 0;
+  }
+  .class_s_goal > .goal > .goalList{
+    padding: 8px;
+  }
+  .class_menu_title{
+    font-size: 5vw;
+  }
   /* 공통영역 */
   .side_padding {
     padding: 10px;
