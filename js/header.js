@@ -140,7 +140,7 @@ window.addEventListener("load", function () {
       cateBarClick.style.display = "none"; // 카테고리 메뉴도 함께 숨김
     }
   }
-  
+
   // 초기 실행 및 리사이즈 이벤트 추가
   applyResponsiveEffect();
   window.addEventListener("resize", applyResponsiveEffect);

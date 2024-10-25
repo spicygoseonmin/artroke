@@ -126,7 +126,7 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-  width: 130px;
+
 }
 /*  */
 .search {
@@ -156,7 +156,6 @@
 }
 #loginIcon {
   font-size: 1.3rem;
-  padding-top: 5px;
 }
 #searchAfter {
   position: absolute;
@@ -176,12 +175,12 @@
   display: block;
   left: 0;
   top: 0;
-  margin-left: 80px;
+
 }
 #searchDelete p {
   text-align: left;
   display: block;
-  margin-left: 36%;
+  margin-left: 33%;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -194,6 +193,7 @@
   margin-left: 33%;
   margin-right: 33%;
   width: 50%;
+  font-size: 1rem;
 }
 #li li {
   padding: 0;
@@ -204,6 +204,7 @@
   color: #ff370b;
 }
 #popularKeywords {
+  width: 100vw;
   line-height: 30px;
 }
 #popularKeywords #li li {
@@ -211,12 +212,7 @@
   width: 100%;
 }
 #popularKeywords p:first-child {
-  text-align: left;
-  display: block;
-  margin-left: 36%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  position: relative;
+  
 }
 #searchBar {
   position: relative;
@@ -233,10 +229,10 @@
 }
 #searchShow {
   top: 50%;
-  left: 0;
+  left: 50%;
   position: relative;
   display: block;
-  transform: translateY(-50%);
+  transform: translate(-50%,-50%);
   font-size: 1.3rem;
 }
 #searchXmark {
@@ -246,11 +242,11 @@
   right: -30px;
 }
 #iconContainer {
-  width: 100% !important;
+  min-width: 120px;
   position: absolute;
   display: block;
   top: 76px;
-  right: 30px;
+  right: 0px;
   margin-left: 20px;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -290,27 +286,16 @@
 @media screen and (max-width: 768px) {
   #loginIcon {
     font-size: 1.3rem;
-    padding-top: 5px;
+
   }
   #searchList {
     position: relative;
     display: block;
     left: 0;
     top: 0;
-    margin-left: 66px;
+
   }
-  /* #cateBarClick {
-    width: 100%;
-    position: fixed;
-    display: block;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
-    border-radius: 5px;
-    z-index: 99999;
-    padding-bottom: 20px;
-    padding-top: 25px;
-    top: 0;
-  } */
+
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -368,6 +353,7 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
     transition: transform 0.5s ease, opacity 0.5s ease; /* 애니메이션을 위한 트랜지션 */
     z-index: 9999;
+    border-radius:  0 0 10px 10px;
   }
 
   #cateBarClick.active {
@@ -461,7 +447,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .header-left {
-    height: 80%;
+    height: 70%;
     width: 50%;
     position: relative;
     display: flex;
@@ -472,23 +458,13 @@
     display: flex;
     justify-content: center;
     font-weight: 700;
-    width: 80px;
+    width: 10vw;
   }
 
-  /* .header-right {
-    width: 115px;
-    right: -30px;
-    gap: 10px;
-    padding-top: 0px;
-    padding-left: 0px;
-    display: flex;
-    justify-content: center;
-    font-size: 23px;
-  } */
 
   #searchAfter {
     position: absolute;
-    right: -30px;
+    right: -50px;
     top: 50%;
     transform: translateY(-50%);
     width: 18px;
@@ -502,16 +478,12 @@
   #searchDelete p {
     text-align: left;
     display: block;
-    margin-left: 27%;
+    margin-left: 20%;
     margin-top: 20px;
     margin-bottom: 30px;
   }
   #popularKeywords p:first-child {
-    text-align: left;
-    display: block;
-    margin-left: 27%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
   }
   #searchNow {
     margin-bottom: 50px;
@@ -537,13 +509,15 @@
   #popularKeywords #li li {
     text-align: left;
     width: 100%;
+    min-width: 130px;
   }
 
   #searchBar {
     position: relative;
     display: block;
     width: 50vw;
-    height: 45px;
+    height: 35px;
+    min-width: 270px;
     background-color: #f6f6f6;
     border-radius: 40px;
     padding-left: 20px;
@@ -551,15 +525,15 @@
     line-height: 40px;
     font-size: 13px;
     border: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 40%;
+    transform: translateX(-40%);
   }
   #searchShow {
     top: 50%;
-    left: 0;
+    left: 50%;
     position: relative;
     display: block;
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
     font-size: 1.3rem;
   }
   #searchXmark {
@@ -570,12 +544,10 @@
   }
 
   #iconContainer {
-    width: 768px !important;
-    min-width: 320px;
-    max-width: 320px;
-    position: absolute;
+    width:100vw !important;
+    position: fixed;
     top: 0;
-    right: -30px;
+    right: 0;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
@@ -585,7 +557,7 @@
   #userInfo {
     display: flex !important;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 10px;
     margin-top: 25px;
     margin-bottom: 50px;
   }
@@ -670,7 +642,7 @@
   #userInfoNickName,
   #xhqslqkznl {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
   }
   #userInfoDelete,
   #xhqslqkznl {
@@ -690,10 +662,12 @@
     display: none !important;
   }
 }
+
 @media screen and (max-width: 320px) {
   #loginIcon {
     font-size: 1.3rem;
     padding-top: 5px;
+
   }
   #cateBarClick {
     width: 100%;
@@ -827,7 +801,7 @@
     padding-left: 0px;
     display: flex;
     justify-content: center;
-    font-size: 23px;
+
   }
   .search {
     margin-right: 0;
@@ -836,9 +810,9 @@
   }
   #iconContainer {
     width: 320px !important;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 10px;
+    right: 0;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: none;
@@ -881,6 +855,7 @@
     border: 0;
   }
   #searchDelete p {
+    font-size: 14px;
     text-align: left;
     display: block;
     margin-left: 10%;
@@ -888,25 +863,22 @@
     margin-bottom: 17px;
   }
   #popularKeywords p:first-child {
-    text-align: left;
-    display: block;
-    margin-left: 10%;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    
   }
   #searchList {
     position: relative;
     display: block;
     left: 0;
     top: 0;
-    margin-left: 25px;
+
   }
   #li {
     display: flex;
     justify-content: space-between;
-    margin-left: 2%;
+    margin-left: 10%;
     margin-right: 33%;
     width: 100%;
+    font-size: 14px;
   }
   #userInfoNotice {
     padding-left: 15px;
@@ -945,7 +917,7 @@
     text-align: center;
     font-size: 12px;
   }
-  
+
   #notice {
     width: 100%;
     position: relative;
@@ -988,7 +960,7 @@
   }
   #userInfoDelete {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #777777;
   }
   #userInfoNickName,
@@ -1017,4 +989,3 @@
     font-size: 14px;
   }
 }
-

@@ -9,31 +9,30 @@ input {
   padding-left: 30px;
 }
 
-#signUpHeader{
+#signUpHeader {
   width: 100%;
-  height: 180px;
+  padding: 15px;
   background-color: #333;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
-#signHeaderImg{
-  width: 130px;
-  height: 130px;
+#signHeaderImg {
+  width: 7vw;
 }
-#signHeaderImg img{
+#signHeaderImg img {
   width: 100%;
   height: 100%;
 }
-#signHeaderImgInfo{
-  padding-left: 20px;
-  font-size: 30px;
+#signHeaderImgInfo {
+  padding-left: 30px;
+  font-size: 2vw;
   font-weight: bold;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
-#signHeaderImgInfo p:last-child{
-  font-size: 25px;
+#signHeaderImgInfo p:last-child {
+  font-size: 1.7vw;
 }
 
 .container {
@@ -44,7 +43,7 @@ input {
   position: relative;
   display: block;
 }
-.menu li{
+.menu li {
   display: block;
 }
 .header-left {
@@ -160,7 +159,7 @@ input {
   border-radius: 5px;
   font-weight: bold;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #logoImg {
     position: relative;
     display: block;
@@ -171,34 +170,33 @@ input {
   #logoImg img {
     width: 100%;
   }
-  #signUpHeader{
+  #signUpHeader {
     width: 100%;
-    height: 120px;
+    padding: 15px;
     background-color: #333;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  #signHeaderImg{
-    width: 90px;
-    height: 90px;
+  #signHeaderImg {
+    width: 16vw;
   }
-  #signHeaderImg img{
+  #signHeaderImg img {
     width: 100%;
     height: 100%;
   }
-  #signHeaderImgInfo{
+  #signHeaderImgInfo {
     padding-left: 20px;
-    font-size: 23px;
+    font-size: 3.7vw;
     font-weight: bold;
     color: #fff;
   }
-  #signHeaderImgInfo p:last-child{
-    font-size: 16px;
+  #signHeaderImgInfo p:last-child {
+    font-size: 3vw;
   }
 
-  .menu li{
+  .menu li {
     display: none;
   }
   .header-left {
@@ -207,36 +205,36 @@ input {
     position: relative;
     display: flex;
     align-items: center;
-}
+  }
 }
 
 /* 반응형 */
 @media screen and (max-width: 320px) {
-  #signUpHeader{
+  #signUpHeader {
     width: 100%;
-    height: 70px;
+    padding: 15px;
     background-color: #333;
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
   }
-  #signHeaderImg{
+  #signHeaderImg {
     width: 50px;
     height: 50px;
   }
-  #signHeaderImg img{
+  #signHeaderImg img {
     width: 100%;
     height: 100%;
   }
-  #signHeaderImgInfo{
+  #signHeaderImgInfo {
     padding-left: 13px;
     font-size: 14px;
     font-weight: bold;
     color: #fff;
   }
-  #signHeaderImgInfo p:last-child{
-    font-size: 11px;
+  #signHeaderImgInfo p:last-child {
+    font-size: 13px;
   }
 
   input {
@@ -344,7 +342,7 @@ input {
     border-radius: 5px;
     font-weight: bold;
   }
-  #login-search{
+  #login-search {
     display: flex;
     align-items: center;
     justify-content: space-between;
