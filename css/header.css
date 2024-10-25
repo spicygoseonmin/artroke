@@ -19,7 +19,7 @@
 }
 .header-left {
   height: 100%;
-  width: 50%;
+  width: 85vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -130,9 +130,8 @@
 }
 /*  */
 .search {
-  margin-right: 35px;
+  margin-right: 20px;
   cursor: pointer;
-
   height: 30%;
 }
 .search-move {
@@ -155,7 +154,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
+#loginIcon {
+  font-size: 1.3rem;
+  padding-top: 5px;
+}
 #searchAfter {
   position: absolute;
   right: 50px;
@@ -235,6 +237,7 @@
   position: relative;
   display: block;
   transform: translateY(-50%);
+  font-size: 1.3rem;
 }
 #searchXmark {
   position: absolute;
@@ -245,6 +248,7 @@
 #iconContainer {
   width: 100% !important;
   position: absolute;
+  display: block;
   top: 76px;
   right: 30px;
   margin-left: 20px;
@@ -284,6 +288,10 @@
   width: 60px;
 }
 @media screen and (max-width: 768px) {
+  #loginIcon {
+    font-size: 1.3rem;
+    padding-top: 5px;
+  }
   #searchList {
     position: relative;
     display: block;
@@ -432,14 +440,14 @@
 
   .logo {
     height: 50%;
-    /* margin: auto; */
-    left: 65%;
+    margin: auto;
+    left: 50%;
     display: block;
     position: relative;
-    padding-left: 10px;
+    padding-left: 0px;
   }
   #cateBar {
-    font-size: 30px;
+    font-size: 1.3rem;
     display: block;
   }
   #searchDelete {
@@ -453,19 +461,31 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .header-left {
-    height: 100%;
-    width: 43%;
+    height: 80%;
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
+    margin: auto 0;
   }
   .header-right {
-    position: relative;
     display: flex;
     justify-content: center;
     font-weight: 700;
-    width: 130px;
+    width: 80px;
   }
+
+  /* .header-right {
+    width: 115px;
+    right: -30px;
+    gap: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+  } */
+
   #searchAfter {
     position: absolute;
     right: -30px;
@@ -540,6 +560,7 @@
     position: relative;
     display: block;
     transform: translateY(-50%);
+    font-size: 1.3rem;
   }
   #searchXmark {
     position: absolute;
@@ -668,6 +689,10 @@
   }
 }
 @media screen and (max-width: 320px) {
+  #loginIcon {
+    font-size: 1.3rem;
+    padding-top: 5px;
+  }
   #cateBarClick {
     width: 100%;
     position: fixed;
@@ -766,7 +791,7 @@
     left: 77%;
     display: block;
     position: relative;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .header-left {
     height: 70%;
@@ -774,17 +799,18 @@
     position: relative;
     display: flex;
     align-items: center;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    /* top: 50%; */
+    left: 7%;
+    transform: translate(-50%);
+    margin: auto 0;
   }
   #cateBar {
     display: block;
     padding: 0;
-    font-size: 23px;
+    font-size: 1.3rem;
   }
   #searchShow {
-    font-size: 23px;
+    font-size: 1.3rem;
     top: 60%;
     left: 0;
     position: relative;
@@ -792,14 +818,14 @@
     transform: translateY(-50%);
   }
   .header-right {
-    width: 105px;
-    font-size: 12px;
+    width: 115px;
     right: -30px;
-    gap: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
+    gap: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
     display: flex;
     justify-content: center;
+    font-size: 23px;
   }
   .search {
     margin-right: 0;
@@ -917,7 +943,7 @@
     text-align: center;
     font-size: 12px;
   }
-
+  
   #notice {
     width: 100%;
     position: relative;
@@ -989,3 +1015,4 @@
     font-size: 14px;
   }
 }
+

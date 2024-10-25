@@ -131,13 +131,17 @@ window.addEventListener("load", function () {
       userInfo.style.display = "block";
       userInfoSecond.style.display = "block";
       menu.classList.add("hidden");
+      cateBar.style.display = "block"; // 768px 이하에서는 cateBar를 보이게
     } else {
       userInfo.style.display = "none";
       userInfoSecond.style.display = "none";
       menu.classList.remove("hidden");
+      cateBar.style.display = "none"; // 768px 이상에서는 cateBar를 숨김
+      cateBarClick.style.display = "none"; // 카테고리 메뉴도 함께 숨김
     }
   }
-
+  
+  // 초기 실행 및 리사이즈 이벤트 추가
   applyResponsiveEffect();
   window.addEventListener("resize", applyResponsiveEffect);
 
