@@ -126,11 +126,10 @@
   display: flex;
   align-items: center;
   font-weight: 700;
-
 }
 /*  */
 .search {
-  margin-right: 20px;
+  margin-right: 15px;
   cursor: pointer;
   height: 30%;
 }
@@ -175,7 +174,6 @@
   display: block;
   left: 0;
   top: 0;
-
 }
 #searchDelete p {
   text-align: left;
@@ -212,7 +210,6 @@
   width: 100%;
 }
 #popularKeywords p:first-child {
-  
 }
 #searchBar {
   position: relative;
@@ -232,7 +229,7 @@
   left: 50%;
   position: relative;
   display: block;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-size: 1.3rem;
 }
 #searchXmark {
@@ -286,14 +283,12 @@
 @media screen and (max-width: 768px) {
   #loginIcon {
     font-size: 1.3rem;
-
   }
   #searchList {
     position: relative;
     display: block;
     left: 0;
     top: 0;
-
   }
 
   @keyframes slideDown {
@@ -354,7 +349,7 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
     transition: transform 0.5s ease, opacity 0.5s ease; /* 애니메이션을 위한 트랜지션 */
     z-index: 9999;
-    border-radius:  0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
   }
 
   #cateBarClick.active {
@@ -387,7 +382,7 @@
   }
   #cateAll {
     margin-left: 30px;
-    font-size: clamp(14px,2vw,18px);
+    font-size: clamp(14px, 2vw, 18px);
   }
 
   #cateline {
@@ -463,7 +458,6 @@
     width: 10vw;
   }
 
-
   #searchAfter {
     position: absolute;
     right: -50px;
@@ -532,7 +526,7 @@
     left: 50%;
     position: relative;
     display: block;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 1.3rem;
   }
   #searchXmark {
@@ -543,7 +537,7 @@
   }
 
   #iconContainer {
-    width:100vw !important;
+    width: 100vw !important;
     position: fixed;
     top: 0;
     right: 0;
@@ -556,14 +550,14 @@
   #userInfo {
     display: flex !important;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
     margin-top: 25px;
     margin-bottom: 50px;
   }
 
   #userInfoNotice {
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
   #userInfoSecond {
     width: 100%;
@@ -667,7 +661,6 @@
   #loginIcon {
     font-size: 1.3rem;
     padding-top: 5px;
-
   }
   #cateBarClick {
     width: 100%;
@@ -801,7 +794,6 @@
     padding-left: 0px;
     display: flex;
     justify-content: center;
-
   }
   .search {
     margin-right: 0;
@@ -822,7 +814,7 @@
   #userInfo {
     display: flex !important;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 30px;
     margin-top: 50px;
     margin-bottom: 30px;
   }
@@ -867,7 +859,6 @@
     display: block;
     left: 0;
     top: 0;
-
   }
   #li {
     display: flex;
@@ -879,7 +870,7 @@
   }
   #userInfoNotice {
     padding-left: 15px;
-    font-size: 18px;
+    font-size: 16px;
   }
   #userInfoSecond {
     width: 100%;
