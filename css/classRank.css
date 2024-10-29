@@ -39,6 +39,11 @@
     /* margin: 5px; */
     /* visibility: visible; */
 }
+.pop_class_info{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .class-img{
     display: block;
     height: 170px;
