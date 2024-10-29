@@ -29,13 +29,12 @@ input {
 #signHeaderImgInfo {
   padding-left: 30px;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #fff;
 }
 #signHeaderImgInfo p:last-child {
   font-size: 1.1rem;
 }
-
 
 .container {
   width: 90%;
@@ -186,10 +185,10 @@ h2 {
   border-radius: 5px;
   font-weight: bold;
 }
-#login-btn{
+#login-btn {
   width: 60px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   #logoImg {
     position: relative;
     display: block;
@@ -220,16 +219,16 @@ h2 {
   #signHeaderImgInfo {
     padding-left: 20px;
     font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
   }
   #signHeaderImgInfo p:last-child {
     font-size: 0.6rem;
   }
-  
-.header-left .menu{
-  display: none;
-}
+
+  .header-left .menu {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   #signUpHeader {
@@ -252,15 +251,14 @@ h2 {
   #signHeaderImgInfo {
     padding-left: 13px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
   }
   #signHeaderImgInfo p:last-child {
     font-size: 13px;
   }
-  
 
-  .signUp .logo{
+  .signUp .logo {
     position: relative;
     display: block;
     left: 50px;
@@ -395,5 +393,4 @@ h2 {
     cursor: pointer;
     font-weight: bold;
   }
-  
 }

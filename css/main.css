@@ -6,101 +6,101 @@
 @import url("contest.css");
 @import url("visual.css");
 
-h2{
-    margin-bottom: 10px;
+h2 {
+  margin-bottom: 10px;
 }
-.floating{
-    width: 70%;
-    max-width: 1024px;
-    height: 70px;
-    background-color: #f0f0f0;
-    display: flex;
-    position: fixed;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    z-index: 100;
-    border-radius: 5px;
-    padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.floating {
+  width: 70%;
+  max-width: 1024px;
+  height: 70px;
+  background-color: #f0f0f0;
+  display: flex;
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 100;
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.floating-btn{
-    width: 300px;
-    height: 50px;
-    background-color: #ff4c24;
-    border-radius: 5px;
+.floating-btn {
+  width: 300px;
+  height: 50px;
+  background-color: #ff4c24;
+  border-radius: 5px;
 }
-.floating p:last-child{
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    line-height: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
+.floating p:last-child {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
 }
 .floating p {
-    padding-left: 15px;
-    font-weight: 700;
+  padding-left: 15px;
+  font-weight: 700;
 }
-.floating span{
-    color: #ff4c24;
+.floating span {
+  color: #ff4c24;
 }
-.floating-mb{
-    display: none;
+.floating-mb {
+  display: none;
 }
 @media screen and (max-width: 1231px) {
-    .inner{
-        max-width: 768px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .floating{
-        width: 708px;
-    }
+  .inner {
+    max-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .floating {
+    width: 708px;
+  }
 }
 @media screen and (max-width: 767px) {
-    .inner{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    h2{
-        font-size: 22px;
-    }
-    .floating{
-        width: calc(100% - 40px);
-    }
+  .inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .floating {
+    width: calc(100% - 40px);
+  }
 }
-@media screen and (max-width:620px) {
-    .floating{
-        height: 50px;
-        padding: 5px;
-    }
-    .floating-btn{
-        width: 40%;
-        min-width: 140px;
-        height: 40px;
-    }
-    .floating a{
-        line-height: 40px;
-        font-size: 16px;
-    }
-    .floating p{
-        font-size: 14px;
-    }
-    .floating-mb{
-        display: block;
-    }
-    .floating-web{
-        display: none;
-    }
+@media screen and (max-width: 620px) {
+  .floating {
+    height: 50px;
+    padding: 5px;
+  }
+  .floating-btn {
+    width: 40%;
+    min-width: 140px;
+    height: 40px;
+  }
+  .floating p:last-child {
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .floating p {
+    font-size: 14px;
+  }
+  .floating-mb {
+    display: block;
+  }
+  .floating-web {
+    display: none;
+  }
 }
-@media screen and (max-width:480px) {
-    h2{
-        font-size: 18px;
-    }
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
 }

@@ -33,10 +33,10 @@ window.addEventListener("load", function () {
   const userFind = JSON.parse(localStorage.getItem("userFind"));
 
   floatingBtn.addEventListener("click", function () {
-    if(userFind){
-      window.location.href="c_study_class.html"
-    }else{
-      window.location.href="login.html"
+    if (userFind) {
+      window.location.href = "c_study_class.html";
+    } else {
+      window.location.href = "login.html";
     }
   });
 
@@ -191,5 +191,3 @@ window.addEventListener("load", function () {
     window.location.href = "login.html";
   });
 });
-
-
