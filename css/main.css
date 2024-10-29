@@ -32,7 +32,7 @@ h2{
     background-color: #ff4c24;
     border-radius: 5px;
 }
-.floating a{
+.floating p:last-child{
     display: block;
     width: 100%;
     height: 100%;
@@ -41,6 +41,7 @@ h2{
     line-height: 50px;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 .floating p {
     padding-left: 15px;
