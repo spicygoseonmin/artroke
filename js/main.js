@@ -47,9 +47,9 @@ window.addEventListener("load", function () {
     PRACTICE_CLASS.forEach(function (item) {
       let tag = `
         <div class="swiper-slide">
-          <a href="#" class="pop_class_info">
+          
             <a href="#" class="class-img">
-              <img src="${item.pic}" alt="" />
+              <img src="${item.pic}" alt="" class="class-pic"/>
               <span class="rank">${item.rank}</span>
               <div class="mark">
               </div>
@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
                 </div>
               </div>
             </div>
-          </a>
+         
         </div>
         `;
       html += tag;
@@ -432,20 +432,20 @@ window.addEventListener("load", function () {
 
   //
   const swStudent = new Swiper(".sw-student", {
-    autoplay:{
-     delay:2000,
-     disableOnInteraction: false, 
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
     },
-    speed:1000,
+    speed: 1000,
     loop: true,
     slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 30,
-    breakpoints:{
-      768:{
+    breakpoints: {
+      768: {
         spaceBetween: 30,
         slidesPerView: 5,
-      }
-    }
+      },
+    },
   });
 });
