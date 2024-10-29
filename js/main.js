@@ -46,7 +46,7 @@ window.addEventListener("load", function () {
     `;
     PRACTICE_CLASS.forEach(function (item) {
       let tag = `
-        <div class="swiper-slide pop_class_li">
+        <div class="swiper-slide">
           
             <a href="#" class="class-img">
               <img src="${item.pic}" alt="" class="class-pic"/>
@@ -147,7 +147,7 @@ window.addEventListener("load", function () {
     `;
     NORMAL_CLASS.forEach(function (item) {
       let tag = `
-        <div class="swiper-slide pop_class_li">
+        <div class="swiper-slide">
                   <a href="#" class="class-img">
                     <img src="${item.pic}" alt="" />
                     <span class="rank">${item.rank}</span>
@@ -248,7 +248,7 @@ window.addEventListener("load", function () {
       let tag = `
       <div class="swiper-slide">
                 <a href="${item.link}" class="banner-img">
-                  <img src="${item.img}" alt="배너 이미지" class="banner-img_pic">
+                  <img src="${item.img}" alt="배너 이미지">
                 </a>
               </div>
       `;
