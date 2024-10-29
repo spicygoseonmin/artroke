@@ -1,4 +1,8 @@
 window.addEventListener("load", function () {
+  const logo = this.document.querySelector(".logo")
+  logo.addEventListener("click",function(){
+    window.location.href="index.html"
+  })
   // 포인트 소식 슬라이드 구역
   const sw_point = new Swiper(".sw_point", {
     slidesPerView: 3.4, // 보여지는 슬라이드 개수

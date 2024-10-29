@@ -117,6 +117,7 @@ input {
   display: flex;
   align-items: center;
   margin-left: 5px;
+  font-size: clamp(13px, 1.7vw, 16px);
 }
 #idSave input {
   margin-right: 10px;
@@ -133,7 +134,8 @@ input {
   display: block;
   float: right;
   cursor: pointer;
-  font-size: 14px;
+  font-size: clamp(14px, 1.7vw, 16px);
+
   margin-right: 5px;
 }
 #loginSite {
@@ -160,6 +162,31 @@ input {
   font-weight: bold;
 }
 @media screen and (max-width: 768px) {
+  #idSave {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    font-size: clamp(13px, 1.7vw, 16px);
+  }
+  #idSave input {
+    margin-right: 10px;
+  }
+  /*  */
+  #idSave input[type="checkbox"] {
+    accent-color: #ff370b;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+  }
+  #userInfoFind {
+    position: relative;
+    display: block;
+    float: right;
+    cursor: pointer;
+    font-size: clamp(14px, 1.7vw, 16px);
+
+    margin-right: 5px;
+  }
   #logoImg {
     position: relative;
     display: block;
@@ -295,7 +322,7 @@ input {
     display: flex;
     align-items: center;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: clamp(13px, 1.7vw, 16px);
   }
   #idSave input {
     margin-right: 10px;
@@ -312,7 +339,9 @@ input {
     display: block;
     float: right;
     cursor: pointer;
-    font-size: 12px;
+    font-size: clamp(14px, 1.7vw, 16px);
+
+
     margin-right: 5px;
   }
   #loginSite {

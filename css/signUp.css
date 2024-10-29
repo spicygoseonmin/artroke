@@ -35,7 +35,6 @@ input {
   font-size: 1.7vw;
 }
 
-
 .container {
   width: 90%;
   max-width: 480px;
@@ -66,11 +65,10 @@ input {
   padding: 0;
   width: 90%;
   margin: auto;
+  font-size: clamp(13px, 1.7vw, 15px);
 }
 input[type="checkbox"] {
   accent-color: #ff370b;
-  width: 15px;
-  height: 15px;
 }
 #consent li {
   display: flex;
@@ -79,12 +77,6 @@ input[type="checkbox"] {
   margin-bottom: 10px;
 }
 
-#consent label {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.1rem;
-}
 form #userId,
 #userPassWord,
 #userEmail {
@@ -123,7 +115,8 @@ form #userId,
 }
 h2 {
   margin: 25px 0;
-  font-size: 25px;
+  font-size: clamp(18px, 1.7vw, 25px);
+
 }
 #certified {
   width: 200px;
@@ -156,9 +149,7 @@ h2 {
   width: 90%;
   margin: -15px auto;
 }
-#phonNumber input {
-  margin-right: 10px;
-}
+
 #num {
   color: #000;
   font-size: 16px;
@@ -167,11 +158,9 @@ h2 {
   margin-left: 20px; /* '내용보기'를 오른쪽으로 밀기 */
   cursor: pointer;
   color: #757575;
+  font-size: clamp(12px, 17px);
 }
-ul li label {
-  font-size: 14px;
-  font-weight: bold;
-}
+
 #signUpBtn {
   position: relative;
   display: block;
@@ -188,10 +177,27 @@ ul li label {
   border-radius: 5px;
   font-weight: bold;
 }
-#login-btn{
+#login-btn {
   width: 60px;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
+  h2{
+    font-size: clamp(18px, 1.7vw, 25px);
+  }
+  #consent {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    font-size: clamp(13px, 1.7vw, 15px);
+  }
+  #consent li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
   #logoImg {
     position: relative;
     display: block;
@@ -227,10 +233,10 @@ ul li label {
   #signHeaderImgInfo p:last-child {
     font-size: 3vw;
   }
-  
-.header-left .menu{
-  display: none;
-}
+
+  .header-left .menu {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   #signUpHeader {
@@ -259,9 +265,8 @@ ul li label {
   #signHeaderImgInfo p:last-child {
     font-size: 13px;
   }
-  
 
-  .signUp .logo{
+  .signUp .logo {
     position: relative;
     display: block;
     left: 50px;
@@ -290,11 +295,10 @@ ul li label {
     padding: 5px;
     font-size: 10px;
     width: 100%;
+    font-size: clamp(13px, 1.7vw, 15px);
   }
   input[type="checkbox"] {
     accent-color: #ff370b;
-    width: 13px;
-    height: 13px;
   }
   #consent li {
     display: flex;
@@ -302,12 +306,7 @@ ul li label {
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  #consent label {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-  }
+
   form #userId,
   #userPassWord,
   #userEmail,
@@ -328,13 +327,11 @@ ul li label {
     height: 40px;
     border-radius: 5px;
   }
-  #phonNumber input {
-    margin: auto;
-    border: 1px solid black;
-  }
+
   h2 {
     margin: 40px 0 15px 0;
-    font-size: 15px;
+    font-size: clamp(18px, 1.7vw, 25px);
+
   }
   #certified {
     width: 130px;
@@ -355,7 +352,8 @@ ul li label {
     width: 100%;
   }
   #phonNumber input {
-    margin-right: 10px;
+    margin: auto;
+    border: 1px solid black;
   }
   #phonenumber {
     color: #000;
@@ -366,10 +364,7 @@ ul li label {
     cursor: pointer;
     color: #757575;
   }
-  ul li label {
-    font-size: 14px;
-    font-weight: bold;
-  }
+
   #signUpBtn {
     position: relative;
     display: block;
@@ -399,5 +394,4 @@ ul li label {
     cursor: pointer;
     font-weight: bold;
   }
-  
 }

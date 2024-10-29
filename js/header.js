@@ -29,6 +29,7 @@ window.addEventListener("load", function () {
   const cateBox = document.querySelector(".cate-box");
   const cateBack = document.querySelector(".cate-background");
 
+
   // 로그인 상태에 따른 UI 업데이트
   const userFind = JSON.parse(localStorage.getItem("userFind"));
 
@@ -80,6 +81,9 @@ window.addEventListener("load", function () {
   myTeach.addEventListener("click", function () {
     teachList.style.display = teachList.style.display === "block" ? "none" : "block";
   });
+  myTeach.addEventListener("click",function(){
+    window.location.href="my_menu.html"
+  })
 
   notice.addEventListener("click", function () {
     noticeNone.style.display = noticeNone.style.display === "block" ? "none" : "block";
@@ -140,6 +144,29 @@ window.addEventListener("load", function () {
       cateBarClick.style.display = "none"; // 카테고리 메뉴도 함께 숨김
     }
   }
+
+ //외부영역 클릭시 안보이게 처리
+  document.addEventListener("click", function (event) {
+  const isClickInsideIconContainer = iconContainer.contains(event.target) || loginIcon.contains(event.target);
+  const isClickInsideSearchDelete = searchDelete.contains(event.target) || searchShow.contains(event.target);
+  const isClickInsideCateBarClick = cateBarClick.contains(event.target) || cateBar.contains(event.target);
+
+  // 각 요소 외부 클릭 시 display: none 처리
+  if (!isClickInsideIconContainer) {
+    iconContainer.style.display = "none";
+  }
+  
+  if (!isClickInsideSearchDelete) {
+    searchDelete.style.display = "none";
+
+  }
+  
+  if (!isClickInsideCateBarClick) {
+    cateBarClick.style.display = "none";
+
+  }
+  
+});
 
   // 초기 실행 및 리사이즈 이벤트 추가
   applyResponsiveEffect();
