@@ -49,10 +49,16 @@
   cursor: pointer;
   color: #757575;
   transition: transform 0.3s;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .c-class_menu > .fixed_menu_wrap > ul > li:hover {
   color: #000;
   transform: translateX(5px);
+}
+.c-class_menu > .fixed_menu_wrap > ul > li > span {
+  height: 100%;
 }
 .fixed_menu_wrap > ul > li.active {
   color: #ff370b;
