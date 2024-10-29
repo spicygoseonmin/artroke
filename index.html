@@ -41,6 +41,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <title>아트로크</title>
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -48,6 +49,7 @@
     <!-- js -->
     <script src="js/header.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/move_html.js"></script>
     <!-- Swiper 적용 -->
     <!-- link Swiper's css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -141,7 +143,7 @@
                 <a href="#" id="loginText"> 로그인 </a>
               </li>
               <i class="fa-solid fa-user" id="loginIcon"></i>
-              
+
               <!-- 로그인했을떄 유저메뉴 -->
               <i class="fa-solid fa-user" style="display: none"></i>
               <li id="user-profile">
@@ -216,17 +218,16 @@
                 <li class="class-cate-title">일반 강의<i class="fa-solid fa-angle-right"></i></li>
                 <li>
                   <ul class="class-cate-list">
-                    <li><a href="#">소묘</a></li>
-                    <li><a href="#">수채화</a></li>
-                    <li><a href="#">유화</a></li>
-                    <li><a href="#">아크릴화</a></li>
-                    <li><a href="#">디지털 드로잉</a></li>
-                    <li><a href="#">조소/모델링</a></li>
-                    <li><a href="#">만화/애니메이션</a></li>
-                    <li><a href="#">아동 미술</a></li>
-                    <li><a href="#">공예</a></li>
-                    <li><a href="#">포토샵/일러스트레이터</a></li>
-                    <li><a href="#">이모티콘</a></li>
+                    <li><a href="#" onclick="saveCategory('m_1')">소묘</a></li>
+                    <li><a href="#" onclick="saveCategory('m_3')">수채화</a></li>
+                    <li><a href="#" onclick="saveCategory('m_4')">유화</a></li>
+                    <li><a href="#" onclick="saveCategory('m_5')">아크릴화</a></li>
+                    <li><a href="#" onclick="saveCategory('m_6')">디지털 드로잉</a></li>
+                    <li><a href="#" onclick="saveCategory('m_7')">조소/모델링</a></li>
+                    <li><a href="#" onclick="saveCategory('m_8')">만화/애니메이션</a></li>
+                    <li><a href="#" onclick="saveCategory('m_9')">공예</a></li>
+                    <li><a href="#" onclick="saveCategory('m_10')">포토샵/일러스트레이터</a></li>
+                    <li><a href="#" onclick="saveCategory('m_11')">이모티콘</a></li>
                   </ul>
                 </li>
                 <!-- 실기 강의 카테고리 -->

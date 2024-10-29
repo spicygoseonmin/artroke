@@ -3,8 +3,8 @@
   .side_padding {
     padding: 15px;
   }
-  .class_menu_title{
-    padding: 0px 8px 10px ;
+  .class_menu_title {
+    padding: 0px 8px 10px;
   }
   .class_formation > .formation > .formationList > li > .img-wrap {
     background-color: #5f5f5f;
@@ -13,7 +13,7 @@
     max-height: 250px;
     border: 1px solid #ccc;
     overflow: hidden;
-}
+  }
 }
 @media screen and (max-width: 1080px) {
   .class-info > .top-info > h1 {
@@ -79,7 +79,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    padding-bottom: 2px;
+    padding-bottom: 50px;
     flex-direction: column;
   }
   .curriculum_wrap > .curriculum > .curriculumList > li > .c_left {
@@ -122,14 +122,21 @@
     padding: 2vw 0;
     justify-content: space-around;
   }
-  .omall{
+  .omall {
     margin: 10vw 0;
   }
-  .class_s_goal > .goal > .goalList{
+  .class_s_goal > .goal > .goalList {
     padding: 8px;
   }
-  .class_menu_title{
+  .class_menu_title {
     font-size: 5vw;
+  }
+
+  .class_s_goal > .goal > .goalList > li > .text-wrap {
+    font-size: 3.4vw;
+  }
+  .class_s_goal > .goal > .goalList > li > .text-wrap > p {
+    font-size: 12px;
   }
   /* 공통영역 */
   .side_padding {
@@ -144,5 +151,21 @@
   .class-info > .top-info > h1 {
     font-size: 3.3vw;
     height: auto;
+  }
+  .class_formation > .formation > .formationList {
+    gap: 5px;
+  }
+  .class_formation > .formation > .formationList > li {
+    width: calc(100% / 2 - 5px);
+  }
+  .class_formation > .formation > .formationList > li > .img-wrap {
+    height: 28vw;
+  }
+  .curriculum_wrap > .curriculum > .curriculumList > li > .c_left > .t-text_wrap {
+    font-size: 12px;
+    padding-top: 5px;
+  }
+  .curriculum_wrap > .curriculum > .curriculumList > li > .c_right {
+    font-size: 12px;
   }
 }
