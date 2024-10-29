@@ -146,13 +146,13 @@
 #searchDelete {
   position: fixed;
   width: 100%;
-  top: 76px;
+  top: 65px;
   left: 0;
   background-color: #fff;
   margin: auto;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 #loginIcon {
   font-size: 1.3rem;
@@ -482,9 +482,6 @@
     margin-top: 20px;
     margin-bottom: 30px;
   }
-  #popularKeywords p:first-child {
-    
-  }
   #searchNow {
     margin-bottom: 50px;
   }
@@ -764,7 +761,7 @@
   .logo {
     height: 50%;
     /* margin: auto; */
-    left: 77%;
+    left: 100%;
     display: block;
     position: relative;
     padding-left: 20px;
@@ -861,9 +858,6 @@
     margin-left: 10%;
     margin-top: 20px;
     margin-bottom: 17px;
-  }
-  #popularKeywords p:first-child {
-    
   }
   #searchList {
     position: relative;
