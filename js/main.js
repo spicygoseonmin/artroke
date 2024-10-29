@@ -47,27 +47,29 @@ window.addEventListener("load", function () {
     PRACTICE_CLASS.forEach(function (item) {
       let tag = `
         <div class="swiper-slide">
-                  <a href="#" class="class-img">
-                    <img src="${item.pic}" alt="" />
-                    <span class="rank">${item.rank}</span>
-                    <div class="mark">
-                    </div>
-                  </a>
-                  <div class="class-txt-wrap">
-                    <div class="class-title">
-                      <a href="#">
-                        ${item.title}
-                      </a></div>
-                    <div class="class-instructor-wrap">
-                      <div class="instructor-spec">${item.spec}</div>
-                      <div class="instructor-info">
-                        <div class="class-cate">${item.cate}</div>
-                        <div class="instructor-info-line"></div>
-                        <div class="instructor-name">${item.instructor}</div>
-                      </div>
-                    </div>
-                  </div>
+          <a href="#" class="pop_class_info">
+            <a href="#" class="class-img">
+              <img src="${item.pic}" alt="" />
+              <span class="rank">${item.rank}</span>
+              <div class="mark">
+              </div>
+            </a>
+            <div class="class-txt-wrap">
+              <div class="class-title">
+                <a href="#">
+                  ${item.title}
+                </a></div>
+              <div class="class-instructor-wrap">
+                <div class="instructor-spec">${item.spec}</div>
+                <div class="instructor-info">
+                  <div class="class-cate">${item.cate}</div>
+                  <div class="instructor-info-line"></div>
+                  <div class="instructor-name">${item.instructor}</div>
                 </div>
+              </div>
+            </div>
+          </a>
+        </div>
         `;
       html += tag;
     });
@@ -431,7 +433,7 @@ window.addEventListener("load", function () {
   //
   const swStudent = new Swiper(".sw-student", {
     autoplay:{
-     delay:3000,
+     delay:2000,
      disableOnInteraction: false, 
     },
     speed:1000,
