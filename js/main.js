@@ -48,8 +48,8 @@ window.addEventListener("load", function () {
       let tag = `
         <div class="swiper-slide">
           
-            <a href="#" class="class-img">
-              <img src="${item.pic}" alt="" class="class-pic"/>
+            <a href="class.html" class="class-img">
+              <img src="${item.pic}" alt="실기강의이미지" class="class-pic"/>
               <span class="rank">${item.rank}</span>
               <div class="mark">
               </div>
@@ -148,8 +148,8 @@ window.addEventListener("load", function () {
     NORMAL_CLASS.forEach(function (item) {
       let tag = `
         <div class="swiper-slide">
-                  <a href="#" class="class-img">
-                    <img src="${item.pic}" alt="" />
+                  <a href="class.html" class="class-img">
+                    <img src="${item.pic}" alt="일반강의이미지"  class="class-pic/>
                     <span class="rank">${item.rank}</span>
                     <div class="mark">
                     </div>

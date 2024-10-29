@@ -3,6 +3,12 @@
 .mobile_menu_list {
   display: none;
 }
+.m_c_class_title {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 20px 30px;
+  display: none;
+}
 
 .wrap {
   width: 100%;
@@ -183,6 +189,9 @@
 }
 @media screen and (max-width: 768px) {
   .mobile_menu_list {
+    display: block;
+  }
+  .m_c_class_title {
     display: block;
   }
   .c-class_menu {
