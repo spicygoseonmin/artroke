@@ -19,7 +19,8 @@ input {
   align-items: center;
 }
 #signHeaderImg {
-  width: 7vw;
+  width: 55px;
+  height: 55px;
 }
 #signHeaderImg img {
   width: 100%;
@@ -27,12 +28,12 @@ input {
 }
 #signHeaderImgInfo {
   padding-left: 30px;
-  font-size: 2vw;
+  font-size: 1.3rem;
   font-weight: bold;
   color: #fff;
 }
 #signHeaderImgInfo p:last-child {
-  font-size: 1.7vw;
+  font-size: 1.1rem;
 }
 
 
@@ -83,7 +84,7 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 form #userId,
 #userPassWord,
@@ -168,10 +169,7 @@ h2 {
   cursor: pointer;
   color: #757575;
 }
-ul li label {
-  font-size: 14px;
-  font-weight: bold;
-}
+
 #signUpBtn {
   position: relative;
   display: block;
@@ -212,7 +210,8 @@ ul li label {
     align-items: center;
   }
   #signHeaderImg {
-    width: 11.8vw;
+    width: 40px;
+    height: 40px;
   }
   #signHeaderImg img {
     width: 100%;
@@ -220,12 +219,12 @@ ul li label {
   }
   #signHeaderImgInfo {
     padding-left: 20px;
-    font-size: 3.7vw;
+    font-size: 0.8rem;
     font-weight: bold;
     color: #fff;
   }
   #signHeaderImgInfo p:last-child {
-    font-size: 3vw;
+    font-size: 0.6rem;
   }
   
 .header-left .menu{
@@ -243,8 +242,8 @@ ul li label {
     align-items: center;
   }
   #signHeaderImg {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   #signHeaderImg img {
     width: 100%;
@@ -366,10 +365,7 @@ ul li label {
     cursor: pointer;
     color: #757575;
   }
-  ul li label {
-    font-size: 14px;
-    font-weight: bold;
-  }
+
   #signUpBtn {
     position: relative;
     display: block;

@@ -28,14 +28,21 @@ window.addEventListener("load", function () {
   const openCate = document.querySelector(".open-cate");
   const cateBox = document.querySelector(".cate-box");
   const cateBack = document.querySelector(".cate-background");
-
+  const floatingBtn = this.document.querySelector(".floating-btn");
   // 로그인 상태에 따른 UI 업데이트
   const userFind = JSON.parse(localStorage.getItem("userFind"));
 
-  myTeach.addEventListener("click",function(){
-    window.location.href="my_menu.html"
+  floatingBtn.addEventListener("click", function () {
+    if(userFind){
+      window.location.href="c_study_class.html"
+    }else{
+      window.location.href="login.html"
+    }
+  });
 
-  })
+  myTeach.addEventListener("click", function () {
+    window.location.href = "my_menu.html";
+  });
   if (userFind) {
     loginText.style.display = "none";
     loginIcon.style.display = "block";
@@ -154,16 +161,16 @@ window.addEventListener("load", function () {
     if (!isClickInsideIconContainer) {
       iconContainer.style.display = "none";
     }
-    
+
     if (!isClickInsideSearchDelete) {
       searchDelete.style.display = "none";
     }
-    
+
     if (!isClickInsideCateBarClick) {
       cateBarClick.style.display = "none";
     }
   });
-  
+
   // 초기 실행 및 리사이즈 이벤트 추가
   applyResponsiveEffect();
   window.addEventListener("resize", applyResponsiveEffect);
@@ -184,3 +191,5 @@ window.addEventListener("load", function () {
     window.location.href = "login.html";
   });
 });
+
+
