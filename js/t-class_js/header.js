@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
     loginText.style.display = "none";
     loginIcon.style.display = "block";
     userInfoNickName.textContent = `${userFind.usernickname} 님 환영합니다!`;
-    userInfoId.textContent = `UserId : ${userFind.userName}`;
+    userInfoId.textContent = ` 아이디 : ${userFind.userName}`;
     userInfoEmail.textContent = `UserEmail : ${userFind.userEmail}`;
   } else {
     loginText.style.display = "inline-block";

@@ -349,6 +349,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 53%;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
     transition: transform 0.5s ease, opacity 0.5s ease; /* 애니메이션을 위한 트랜지션 */
@@ -382,10 +383,11 @@
     width: 12px;
     height: 27px;
     padding-top: 7px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   #cateAll {
     margin-left: 30px;
+    font-size: clamp(14px,2vw,18px);
   }
 
   #cateline {
@@ -439,7 +441,7 @@
   #searchDelete {
     position: fixed;
     width: 100%;
-    top: 70px;
+    top: 65px;
     left: 0;
     background-color: #fff;
     margin: auto;
@@ -571,6 +573,7 @@
     text-align: center;
     line-height: 25px;
     font-size: 15px;
+    margin-bottom: 20px;
   }
   #userInfoSecond i {
     font-size: 50px;
@@ -620,7 +623,7 @@
   }
   #InterestedList {
     margin-left: 15px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 35px;
   }
   #logOut {
@@ -677,7 +680,7 @@
     padding-bottom: 20px;
     padding-top: 5px;
     top: 0;
-    height: 60%;
+    height: 50%;
     overflow-y: auto;
   }
   #cateBarClickMenuTop {
@@ -708,8 +711,8 @@
     display: none;
   }
   #cateLeft {
-    width: 12px;
-    height: 30px;
+    width: 7px;
+    height: 20px;
     padding-top: 7px;
     margin-left: 15px;
   }
@@ -960,7 +963,7 @@
   #userInfoNickName,
   #xhqslqkznl {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
   }
   #userInfoDelete,
   #xhqslqkznl {

@@ -40,8 +40,8 @@ window.addEventListener("load", function () {
     loginText.style.display = "none";
     loginIcon.style.display = "block";
     userInfoNickName.textContent = `${userFind.usernickname} 님 환영합니다!`;
-    userInfoId.textContent = `UserId : ${userFind.userName}`;
-    userInfoEmail.textContent = `UserEmail : ${userFind.userEmail}`;
+    userInfoId.textContent = `아이디 : ${userFind.userName}`;
+    userInfoEmail.textContent = `이메일 : ${userFind.userEmail}`;
   } else {
     loginText.style.display = "inline-block";
     loginIcon.style.display = "none";
@@ -149,7 +149,7 @@ window.addEventListener("load", function () {
     const isClickInsideIconContainer = iconContainer.contains(event.target) || loginIcon.contains(event.target);
     const isClickInsideSearchDelete = searchDelete.contains(event.target) || searchShow.contains(event.target);
     const isClickInsideCateBarClick = cateBarClick.contains(event.target) || cateBar.contains(event.target);
-  
+
     // 각 요소 외부 클릭 시 display: none 처리
     if (!isClickInsideIconContainer) {
       iconContainer.style.display = "none";
