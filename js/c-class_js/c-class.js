@@ -60,7 +60,8 @@ window.addEventListener("load", function () {
       // 전체 버튼을 클릭한 경우 (index가 0이라고 가정)
       if (index === 0) {
         // 전체 강의 리스트를 다시 보여줌
-        show_C_class(C_CLASS_LIST);
+        const sortedClasses = [...C_CLASS_LIST].sort((a, b) => a.rank - b.rank);
+        show_C_class(sortedClasses);
       } else {
         // 필터된 강의 리스트를 보여줌
         const changeClasses = C_CLASS_LIST.filter((a) => a.m_l === index);
@@ -74,9 +75,12 @@ window.addEventListener("load", function () {
     m_btn_m_op.forEach(function (op, index) {
       // 전체 버튼을 클릭한 경우 (index가 0이라고 가정)
       if (m_btn_m.value === index + "_o_menu") {
+        // 필터된 강의 리스트를 보여줌
+        const changeClasses = C_CLASS_LIST.filter((a) => a.m_l === index);
+        show_C_class(changeClasses);
         if (m_btn_m.value === "all") {
-          // 전체 강의 리스트를 다시 보여줌
-          show_C_class(C_CLASS_LIST);
+          const sortedClasses = [...C_CLASS_LIST].sort((a, b) => a.rank - b.rank);
+          show_C_class(sortedClasses);
         } else {
           // 필터된 강의 리스트를 보여줌
           const changeClasses = C_CLASS_LIST.filter((a) => a.m_l === index);
