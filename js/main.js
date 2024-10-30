@@ -106,17 +106,17 @@ window.addEventListener("load", function () {
           slidesPerGroup: 1,
         },
         420: {
-          slidesPerView: 1.8,
+          slidesPerView: 2.1,
           spaceBetween: 10,
           slidesPerGroup: 1,
         },
         360: {
-          slidesPerView: 1.5,
+          slidesPerView: 2.1,
           spaceBetween: 10,
           slidesPerGroup: 1,
         },
         320: {
-          slidesPerView: 1.5,
+          slidesPerView: 2.1,
           spaceBetween: 10,
           slidesPerGroup: 1,
         },
@@ -205,17 +205,17 @@ window.addEventListener("load", function () {
           slidesPerGroup: 1,
         },
         420: {
-          slidesPerView: 1.8,
+          slidesPerView: 2.1,
           spaceBetween: 10,
           slidesPerGroup: 1,
         },
         360: {
-          slidesPerView: 1.5,
+          slidesPerView: 2.1,
           spaceBetween: 10,
           slidesPerGroup: 1,
         },
         320: {
-          slidesPerView: 1.5,
+          slidesPerView: 2.1,
           spaceBetween: 10,
           slidesPerGroup: 1,
         },

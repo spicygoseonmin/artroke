@@ -53,6 +53,8 @@
 }
 .sw-class img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: all 0.5s;
 }
 .sw-class .swiper-slide:hover img{
@@ -170,5 +172,24 @@
     }
     .slide-prev,.slide-next{
         font-size: 18px;
+    }
+    .class-img{
+        height: 25vw;
+    }
+    .rank{
+        font-size: 25px;
+    }
+    .mark{
+        width: 14px;
+        height: 17px;
+    }
+    .class-title{
+        max-height: 45px;
+        font-size: 13px;
+        padding: 5px 5px 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: wrap;
     }
 }
