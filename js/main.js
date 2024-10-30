@@ -149,7 +149,7 @@ window.addEventListener("load", function () {
       let tag = `
         <div class="swiper-slide">
                   <a href="class.html" class="class-img">
-                    <img src="${item.pic}" alt="일반강의이미지"  class="class-pic/>
+                    <img src="${item.pic}" alt="일반강의이미지"  class="class-pic"/>
                     <span class="rank">${item.rank}</span>
                     <div class="mark">
                     </div>

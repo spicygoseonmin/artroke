@@ -75,11 +75,11 @@
     top: 15px;
     width: 20px;
     height: 25px;
-    background: url("../images/icon/mark.png")no-repeat;
+    background: url("../images/icon/mark.png") no-repeat;
     background-size: cover;
 }
 .mark.active{
-    background: url("../images/icon/mark-active.png")no-repeat;
+    background: url("../images/icon/mark-active.png") no-repeat;
     background-size: cover;
 }
 /* .mark > i{
@@ -181,7 +181,10 @@
     }
     .mark{
         width: 14px;
-        height: 17px;
+        height: 17.3px;
+    }
+    .class-instructor-wrap{
+        padding-top: 10px;
     }
     .class-title{
         max-height: 45px;
