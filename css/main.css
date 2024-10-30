@@ -86,6 +86,9 @@ h2 {
     height: 40px;
   }
   .floating p:last-child {
+    padding-left: 0;
+  }
+  .floating p:last-child {
     line-height: 40px;
     font-size: 16px;
   }
