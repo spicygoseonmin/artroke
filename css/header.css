@@ -7,7 +7,7 @@
   top: 0;
   height: 76px;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 5px 5px 0px;
   z-index: 999;
   border-bottom: #fff solid 1px;
 }
@@ -280,7 +280,19 @@
 #loginText {
   width: 60px;
 }
+@media screen and (max-width:1232px) {
+  .logo{
+    height: 40%;
+  }
+  .menu{
+    gap: 20px;
+    padding-left: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .menu{
+    display: none;
+  }
   #loginIcon {
     font-size: 1.3rem;
   }

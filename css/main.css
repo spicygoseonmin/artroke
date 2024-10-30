@@ -43,7 +43,7 @@ h2 {
   font-weight: 500;
   cursor: pointer;
 }
-.floating p {
+.floating > p {
   padding-left: 15px;
   font-weight: 700;
 }
