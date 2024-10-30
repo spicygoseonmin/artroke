@@ -59,6 +59,11 @@
 }
 .c-class_menu > .fixed_menu_wrap > ul > li > span {
   height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.c-class_menu > .fixed_menu_wrap > ul > li:hover > span {
+  opacity: 1;
 }
 .fixed_menu_wrap > ul > li.active {
   color: #ff370b;
@@ -166,7 +171,9 @@
 }
 @media screen and (max-width: 1232px) {
   .c-class_menu {
-    padding: 15px;
+    padding: 15px 0px;
+    width: 250px;
+    margin-right: 10px;
   }
   .class-title {
     font-size: 1.2vw;
