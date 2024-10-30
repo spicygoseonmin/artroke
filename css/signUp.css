@@ -11,16 +11,20 @@ input {
 
 #signUpHeader {
   width: 100%;
-  padding: 15px;
-  background-color: #333;
+  height: 100%;
+  padding: 30px;
+  background: url("../images/signImg.png")no-repeat center;
+  background-size: 100% 100%;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
+
 }
 #signHeaderImg {
   width: 55px;
   height: 55px;
+  z-index: 99;
 }
 #signHeaderImg img {
   width: 100%;
@@ -30,7 +34,7 @@ input {
   padding-left: 30px;
   font-size: 1.3rem;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 #signHeaderImgInfo p:last-child {
   font-size: 1.1rem;
@@ -65,6 +69,7 @@ input {
   list-style: none;
   padding: 0;
   width: 90%;
+  max-width: 400px;
   margin: auto;
 }
 input[type="checkbox"] {
@@ -83,12 +88,13 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 1rem;
+  font-size: clamp(12px, 2vw, 15px);
 }
 form #userId,
 #userPassWord,
 #userEmail {
   width: 90%;
+  max-width: 400px;
   height: 45px;
   border-radius: 5px;
   margin: 7px auto;
@@ -106,11 +112,13 @@ form #userId,
   display: flex;
   align-items: center;
   width: 90%;
+  max-width: 400px;
   margin: auto;
   gap: 10px;
 }
 #userNickName {
   width: 90%;
+
   height: 45px;
   border-radius: 5px;
   margin: 7px auto;
@@ -122,14 +130,15 @@ form #userId,
   border: 1px solid black;
 }
 h2 {
-  margin: 25px 0;
-  font-size: 25px;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 500;
 }
 #certified {
-  width: 200px;
+  width: 150px;
   height: 45px;
   float: right;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -141,11 +150,10 @@ h2 {
   width: 150px;
   height: 45px;
   float: right;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 12px 0;
   border-radius: 5px;
   cursor: pointer;
   border: 0;
@@ -154,6 +162,7 @@ h2 {
   display: flex;
   align-items: center;
   width: 90%;
+  max-width: 400px;
   margin: -15px auto;
 }
 #phonNumber input {
@@ -202,7 +211,7 @@ h2 {
   #signUpHeader {
     width: 100%;
     padding: 15px;
-    background-color: #333;
+
     display: flex;
     position: relative;
     justify-content: center;
@@ -220,7 +229,7 @@ h2 {
     padding-left: 20px;
     font-size: 0.8rem;
     font-weight: 500;
-    color: #fff;
+
   }
   #signHeaderImgInfo p:last-child {
     font-size: 0.6rem;
@@ -234,7 +243,6 @@ h2 {
   #signUpHeader {
     width: 100%;
     padding: 15px;
-    background-color: #333;
     display: flex;
     position: relative;
     justify-content: center;
@@ -252,7 +260,6 @@ h2 {
     padding-left: 13px;
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
   }
   #signHeaderImgInfo p:last-child {
     font-size: 13px;
@@ -330,8 +337,9 @@ h2 {
     border: 1px solid black;
   }
   h2 {
-    margin: 40px 0 15px 0;
+    margin: 30px 0 5px 0;
     font-size: 15px;
+    font-weight: 500;
   }
   #certified {
     width: 130px;
@@ -381,7 +389,7 @@ h2 {
     font-weight: bold;
   }
   #checkNicknameBtn {
-    width: 100px;
+    width: 130px;
     height: 40px;
     float: right;
     font-size: 12px;
