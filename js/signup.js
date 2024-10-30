@@ -5,7 +5,9 @@ window.addEventListener("load", function () {
   let isNicknameAvailable = false;  // 닉네임 중복 체크 결과를 저장하는 플래그
 
   // 유효성 검사 정규식
-  const userNicknameRegex = /^[a-z0-9_-가-힣]{5,8}$/;
+  const userNicknameRegex = /^[a-z0-9_가-힣ㄱ-ㅎㅏ-ㅣ]{4,8}$/;
+
+
 
   // 닉네임 중복 체크
   checkNicknameBtn.addEventListener("click", function () {
@@ -14,7 +16,7 @@ window.addEventListener("load", function () {
 
     // 닉네임 유효성 검사 먼저 실행
     if (!userNicknameRegex.test(inputNickname)) {
-      alert("닉네임은 5자 이상 8자 이하로 입력해 주세요.");
+      alert("닉네임은 4자 이상 8자 이하로 입력해 주세요.");
       return;
     }
 
