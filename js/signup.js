@@ -2,12 +2,14 @@ window.addEventListener("load", function () {
   const signForm = document.getElementById("sign-form");
   const checkNicknameBtn = document.getElementById("checkNicknameBtn");
   const userNickNameInput = document.getElementById("userNickName");
-  let isNicknameAvailable = false;  // 닉네임 중복 체크 결과를 저장하는 플래그
+  let isNicknameAvailable = false; // 닉네임 중복 체크 결과를 저장하는 플래그
 
   // 유효성 검사 정규식
-  const userNicknameRegex = /^[a-z0-9_가-힣ㄱ-ㅎㅏ-ㅣ]{4,8}$/;
-
-
+  const userNicknameRegex = /^[a-z0-9_가-힣ㄱ-ㅎㅏ-ㅣ]{4,8}$/; //닉네임
+  const usernameRegex = /^[a-zA-Z0-9]+$/;  //유저아이디
+  const passwordRegex = /^.{6,10}$/;  //유저비밀번호
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;  //유저이메일
+  const phoneNumberRegex = /^\d{11}$/;  //유저휴대번호
 
   // 닉네임 중복 체크
   checkNicknameBtn.addEventListener("click", function () {
@@ -25,14 +27,14 @@ window.addEventListener("load", function () {
       return;
     }
 
-    const isDuplicate = users.some(user => user.usernickname === inputNickname);
+    const isDuplicate = users.some((user) => user.usernickname === inputNickname);
 
     if (isDuplicate) {
       alert("이미 사용 중인 닉네임입니다.");
-      isNicknameAvailable = false;  // 중복된 경우 사용 불가
+      isNicknameAvailable = false; // 중복된 경우 사용 불가
     } else {
       alert("사용 가능한 닉네임입니다.");
-      isNicknameAvailable = true;  // 중복되지 않은 경우 사용 가능
+      isNicknameAvailable = true; // 중복되지 않은 경우 사용 가능
     }
   });
 
