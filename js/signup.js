@@ -78,7 +78,7 @@ window.addEventListener("load", function () {
       return;
     }
     if (!userNicknameRegex.test(userNickname)) {
-      alert("닉네임은 5자 이상 8자 이하로 입력해 주세요.");
+      alert("닉네임은 2자 이상 7자 이하로 입력해 주세요.");
       return;
     }
 
