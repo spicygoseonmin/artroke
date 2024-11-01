@@ -45,6 +45,30 @@ window.addEventListener("load", function () {
     if (loginNickName) loginNickName.style.display = "none";
   }
 
+// 화면의 다른 부분을 클릭했을 때 iconContainer 닫기
+document.addEventListener("click", function (event) {
+  // iconContainer가 열려 있고 클릭한 요소가 iconContainer나 loginIcon이 아닐 때만 닫기
+  if (iconContainer.style.display === "block" && !iconContainer.contains(event.target) && event.target !== loginIcon) {
+    iconContainer.style.display = "none";
+  }
+});
+document.addEventListener("click", function (event) {
+  // searchDelete가 열려 있고 클릭한 요소가 searchDelete나 searchShow가 아닐 때만 닫기
+  if (searchDelete.style.display === "block" && !searchDelete.contains(event.target) && event.target !== searchShow) {
+    searchDelete.style.display = "none";
+  }
+});
+// 화면의 다른 부분을 클릭했을 때 cateBarClick 닫기
+document.addEventListener("click", function (event) {
+  // cateBarClick이 열려 있고 클릭한 요소가 cateBarClick이나 cateBar가 아닐 때만 닫기
+  const isCateBarOpen = cateBarClick.style.display === "block";
+  const clickedOutsideCateBar = !cateBarClick.contains(event.target) && event.target !== cateBar;
+
+  if (isCateBarOpen && clickedOutsideCateBar) {
+    cateBarClick.style.display = "none";
+  }
+});
+
   // 로그인 및 로그아웃 이벤트
   loginIcon.addEventListener("click", function () {
     iconContainer.style.display = iconContainer.style.display === "block" ? "none" : "block";
