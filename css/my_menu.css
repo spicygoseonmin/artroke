@@ -157,6 +157,7 @@
   border-radius: 50px;
   border: 1px solid #ccc;
   font-size: 14px;
+  cursor: pointer;
 }
 .option > .show_all {
   background-color: #000;
@@ -339,7 +340,10 @@
 .sct > .sctList > ul > li > .bottom > .class_sd_submit {
   font-size: 16px;
   font-weight: 600;
-  color: #ff370b;
+  color: #ffffff;
+  background-color: #577cfd;
+  padding: 4px 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 .sct > .sctList > ul > li > .bottom > .class_sd_submit.color_done {
@@ -732,6 +736,10 @@
     flex-direction: column;
     font-size: 2.5vw;
   }
+  /* 썸네일 로드 */
+  .submit_project_work > .submit_project_work_wrap > form > .img_thumbnail > .thumbnail_list > li {
+    width: calc(100% / 3 - 4px);
+  }
 
   .sw_point {
     width: 100%;
@@ -890,6 +898,10 @@
   }
   .sct > .sctList > ul > li > .bottom > .class_sd_submit {
     font-size: 3vw;
+  }
+  /* 썸네일 로드 */
+  .submit_project_work > .submit_project_work_wrap > form > .img_thumbnail > .thumbnail_list > li {
+    width: calc(100% / 2 - 4px);
   }
 
   .point_title {
