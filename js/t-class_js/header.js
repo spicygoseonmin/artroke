@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
     loginIcon.style.display = "block";
     userInfoNickName.textContent = `${userFind.usernickname} 님 환영합니다!`;
     userInfoId.textContent = ` 아이디 : ${userFind.userName}`;
-    userInfoEmail.textContent = `UserEmail : ${userFind.userEmail}`;
+    // userInfoEmail.textContent = `UserEmail : ${userFind.userEmail}`;
   } else {
     loginText.style.display = "inline-block";
     loginIcon.style.display = "none";
@@ -61,7 +61,7 @@ window.addEventListener("load", function () {
     loginIcon.style.display = "none";
     userInfoNickName.textContent = "";
     userInfoId.textContent = "";
-    userInfoEmail.textContent = "";
+    // userInfoEmail.textContent = "";
     iconContainer.style.display = "none";
     alert("로그아웃이 완료되었습니다.");
   });
@@ -114,11 +114,11 @@ window.addEventListener("load", function () {
   });
 
   // 카테고리 메뉴 토글
-  openCate.addEventListener("click", function () {
-    cateBox.classList.toggle("active");
-    cateBack.classList.toggle("active");
-    searchDelete.style.display = "none";
-  });
+  // openCate.addEventListener("click", function () {
+  //   cateBox.classList.toggle("active");
+  //   cateBack.classList.toggle("active");
+  //   searchDelete.style.display = "none";
+  // });
 
   cateBack.addEventListener("click", function () {
     cateBack.classList.remove("active");

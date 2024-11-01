@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+
   // 요소 선택
   const loginText = document.getElementById("loginText");
   const loginIcon = document.getElementById("loginIcon");
@@ -28,17 +29,17 @@ window.addEventListener("load", function () {
   const openCate = document.querySelector(".open-cate");
   const cateBox = document.querySelector(".cate-box");
   const cateBack = document.querySelector(".cate-background");
-  const floatingBtn = this.document.querySelector(".floating-btn");
+  // const floatingBtn = this.document.querySelector(".floating-btn");
   // 로그인 상태에 따른 UI 업데이트
   const userFind = JSON.parse(localStorage.getItem("userFind"));
 
-  floatingBtn.addEventListener("click", function () {
-    if (userFind) {
-      window.location.href = "c_study_class.html";
-    } else {
-      window.location.href = "login.html";
-    }
-  });
+  // floatingBtn.addEventListener("click", function () {
+  //   if (userFind) {
+  //     window.location.href = "c_study_class.html";
+  //   } else {
+  //     window.location.href = "login.html";
+  //   }
+  // });
 
   myTeach.addEventListener("click", function () {
     window.location.href = "my_menu.html";
