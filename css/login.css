@@ -14,7 +14,7 @@ input {
   height: 100%;
   padding: 30px 0;
   background: url("../images/loginImg.png") no-repeat center;
-  background-size: 100% 100%; 
+  background-size: cover;
   display: flex;
   position: relative;
   justify-content: center;
@@ -32,7 +32,7 @@ input {
   padding-left: 30px;
   font-size: 1.3rem;
   font-weight: 500;
-  color: #000
+  color: #000;
 }
 #signHeaderImgInfo p:last-child {
   font-size: 1.1rem;
