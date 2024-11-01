@@ -273,7 +273,7 @@ window.addEventListener("load", function () {
                   <a href="#" class="news-title">${item.title}</a>
                   <p class="news-date">${item.date}</p>
                 </div>
-                <div class="news-more"><a href="#">알아보기</a></div>
+                <div class="news-more"><a href="news.html">알아보기</a></div>
               </li>
       `;
       html += tag;

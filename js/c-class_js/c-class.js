@@ -34,6 +34,7 @@ window.addEventListener("load", function () {
     sortedClasses.forEach(function (item) {
       const tag = `
             <li>
+                <a href="class.html">
                 <div class="img_wrap">
                    <img src="images/main_ class_img/${item.url}" alt="${item.title}">
                     <div class="mark"></div>
@@ -46,6 +47,7 @@ window.addEventListener("load", function () {
                         <div class="instructor-name">${item.teacher}</div>
                     </div>
                 </div>
+                </a>
             </li>
         `;
       html += tag;
