@@ -26,6 +26,7 @@
 }
 #cateBar {
   display: none;
+  cursor: pointer;
 }
 .logo {
   height: 50%;
@@ -155,6 +156,7 @@
 }
 #loginIcon {
   font-size: 20px;
+  cursor: pointer;
 }
 #searchAfter {
   position: absolute;
@@ -257,6 +259,7 @@
   text-align: right;
   padding: 0 10px;
   line-height: 35px;
+  cursor: pointer;
 }
 #logOut {
   color: #ff370b;
@@ -612,7 +615,7 @@
   #teachList p {
     float: right;
     text-align: center;
-    font-size: 14px;
+    font-size: 11px;
   }
   #teachList li {
     width: 100%;
@@ -932,7 +935,7 @@
   #teachList p {
     float: right;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
   }
   #teachList li {
     width: 100%;

@@ -1,4 +1,10 @@
 window.addEventListener("load", function () {
+  const myTeach = this.document.getElementById("myTeach")
+  myTeach.addEventListener("click",function(){
+    myTeach.addEventListener("click",function(){
+      window.location.href="my_menu.html"
+    })
+  })
   // data.json을 로딩, 연결시킨다.
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function (e) {
@@ -36,7 +42,7 @@ window.addEventListener("load", function () {
             <li>
                 <a href="class.html">
                 <div class="img_wrap">
-                   <img src="images/main_ class_img/${item.url}" alt="${item.title}">
+                  <img src="images/main_ class_img/${item.url}" alt="${item.title}">
                     <div class="mark"></div>
                 </div>
                 <div class="text_wrap">

@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+
   const users = JSON.parse(localStorage.getItem("userFind")) || [];
   const log_nicknamr = document.querySelector(".log_nicknamr");
 
@@ -118,4 +119,20 @@ window.addEventListener("load", function () {
       class_title_span.classList.add("color_done");
     });
   });
+  const userInfoTop = document.getElementById("userInfoTop");
+
+function applyResponsiveEffect() {
+  if (window.innerWidth <= 768) {
+    userInfoTop.style.display = "block"; // 768px 이하일 때 보이기
+  } else {
+    userInfoTop.style.display = "none";  // 768px 초과일 때 숨기기
+  }
+}
+
+// 처음 로딩 시에 적용
+applyResponsiveEffect();
+
+// 창 크기 조절할 때마다 적용
+window.addEventListener("resize", applyResponsiveEffect);
 });
+
