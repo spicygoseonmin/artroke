@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
   // 로그인 상태에 따른 UI 업데이트
   const userFind = JSON.parse(localStorage.getItem("userFind"));
 
- 
+  
   floatingBtn.addEventListener("click", function () {
     if (userFind) {
       window.location.href = "c_study_class.html";

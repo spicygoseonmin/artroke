@@ -104,7 +104,9 @@ document.addEventListener("click", function (event) {
   myTeach.addEventListener("click", function () {
     teachList.style.display = teachList.style.display === "block" ? "none" : "block";
   });
-
+  myTeach.addEventListener("click",function(){
+    window.location.href="my_menu.html"
+  })
   notice.addEventListener("click", function () {
     noticeNone.style.display = noticeNone.style.display === "block" ? "none" : "block";
   });

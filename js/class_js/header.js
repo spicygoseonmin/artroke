@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
     loginIcon.style.display = "block";
     userInfoNickName.textContent = `${userFind.usernickname} 님 환영합니다!`;
     userInfoId.textContent = `UserId : ${userFind.userName}`;
-    userInfoEmail.textContent = `UserEmail : ${userFind.userEmail}`;
+    
   } else {
     loginText.style.display = "inline-block";
     loginIcon.style.display = "none";
@@ -78,9 +78,10 @@ window.addEventListener("load", function () {
 
   // 메뉴 토글
   myTeach.addEventListener("click", function () {
-    teachList.style.display = teachList.style.display === "block" ? "none" : "block";
-  });
+    window.location.href="my_menu.html"
 
+  });
+  
   notice.addEventListener("click", function () {
     noticeNone.style.display = noticeNone.style.display === "block" ? "none" : "block";
   });
@@ -114,11 +115,11 @@ window.addEventListener("load", function () {
   });
 
   // 카테고리 메뉴 토글
-  openCate.addEventListener("click", function () {
-    cateBox.classList.toggle("active");
-    cateBack.classList.toggle("active");
-    searchDelete.style.display = "none";
-  });
+  // openCate.addEventListener("click", function () {
+  //   cateBox.classList.toggle("active");
+  //   cateBack.classList.toggle("active");
+  //   searchDelete.style.display = "none";
+  // });
 
   cateBack.addEventListener("click", function () {
     cateBack.classList.remove("active");
