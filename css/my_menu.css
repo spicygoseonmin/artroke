@@ -250,7 +250,6 @@
   font-weight: 600;
   color: #ff370b;
 }
-
 /* 수강증 발급 및 지난회차 수강하기 */
 .scl > .sclList > ul > li > .info .listen_btn_wrap {
   display: flex;
@@ -288,6 +287,13 @@
 .scl > .sclList > ul > li > .info .listen_btn_wrap > .play_class:hover {
   background-color: #c4c4c4;
 }
+.scl > .notice > .notice_title{
+  color: #696969;
+}
+.scl > .notice > .notice_txt{
+  color: #696969;
+}
+
 
 /* 과제제출 =================================================================================*/
 .sct > .notice {
@@ -322,7 +328,7 @@
   color: #ff370b;
 }
 .sct > .sctList > ul > li > .top > .class_title > span.color_done {
-  color: #577cfd;
+  color: #ffffff;
 }
 .sct > .sctList > ul > li > .top > .class_s_day {
   font-size: 14px;
@@ -346,10 +352,17 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.sct > .sctList > ul > li > .bottom > .class_sd_submit.color_done {
-  color: #577cfd;
+.sct > .sctList > ul > li > .bottom > .class_sd_submit:hover{
+  background-color: #4163db;
 }
-
+.sct > .sctList > ul > li > .bottom > .class_sd_submit.color_done {
+  color: #8b8b8b;
+  background-color: #dadada
+}
+.sct > .sctList > ul > li > .bottom > .class_sd_submit.color_done:hover{
+  background-color: #577cfd;
+  color: #fff;
+}
 .sct > .sctList > ul > li > .middle {
   padding: 10px 0;
 }
@@ -503,6 +516,7 @@
 /* 결재수단 ===================================================================================*/
 .mpls {
   width: 100%;
+  height: 600px;
 }
 .mpls > .mpls_wrap {
   width: 100%;
@@ -522,6 +536,7 @@
   border: none;
   margin-right: 30px;
   float: right;
+  position: relative;
 }
 #payment-button:hover {
   background-color: #e62006;
