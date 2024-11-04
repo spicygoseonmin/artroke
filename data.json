@@ -151,11 +151,11 @@
         {"img":""}
     ],
     "banner": [
-        {"img":"images/banner/banner1.png", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner2.png", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner3.png", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner4.png", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner5.png", "id": "b1", "link":"#"}
+        {"img":"images/banner/banner1.jpg", "id": "b1", "link":"#"},
+        {"img":"images/banner/banner2.jpg", "id": "b1", "link":"#"},
+        {"img":"images/banner/banner3.jpg", "id": "b1", "link":"#"},
+        {"img":"images/banner/banner4.jpg", "id": "b1", "link":"#"},
+        {"img":"images/banner/banner5.jpg", "id": "b1", "link":"#"}
     ],
     "news":[
         {"title":"드로잉 강의(일반강의) 수강신청시 스타터키트 지원", "date":"2024. 11. 23일 까지"},

@@ -283,6 +283,16 @@
 #loginText {
   width: 60px;
 }
+.userInfoSecond-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userInfoSecond-img img{
+  width: 100%;
+
+}
 @media screen and (max-width:1232px) {
   .logo{
     height: 40%;
@@ -580,13 +590,16 @@
   }
   #userInfoSecond {
     width: 100%;
-    display: block;
+    /* display: flex; */
     position: relative;
     margin: auto;
     text-align: center;
     line-height: 25px;
     font-size: 15px;
     margin-bottom: 20px;
+  }
+  .userInfoSecond-img{
+    margin: 0 auto;
   }
   #userInfoSecond i {
     font-size: 50px;
@@ -905,6 +918,7 @@
     text-align: center;
     line-height: 25px;
     margin-bottom: 20px;
+
   }
   #userInfoSecond i {
     font-size: 30px;
