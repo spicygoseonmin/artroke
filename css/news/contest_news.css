@@ -82,7 +82,7 @@
   font-size: 18px;
 }
 .constest_notice > .constest_top > .constest_list_wrap > li > .contestBox > .contestinfo > .top > .age_ap {
-  background-color: #577cfd;
+  /* background-color: #577cfd; */
   font-size: 14px;
   font-weight: 600;
   color: #fff;
