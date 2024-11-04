@@ -151,11 +151,11 @@
         {"img":""}
     ],
     "banner": [
-        {"img":"images/banner/banner1.jpg", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner2.jpg", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner3.jpg", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner4.jpg", "id": "b1", "link":"#"},
-        {"img":"images/banner/banner5.jpg", "id": "b1", "link":"#"}
+        {"img":"images/banner/banner1.jpg", "id": "b1", "link":"#","tabImg":"images/banner/banner-tab1.png","mbImg":"images/banner/banner-mb1.png"},
+        {"img":"images/banner/banner2.jpg", "id": "b1", "link":"#","tabImg":"images/banner/banner-tab2.png","mbImg":"images/banner/banner-mb2.png"},
+        {"img":"images/banner/banner3.jpg", "id": "b1", "link":"#","tabImg":"images/banner/banner-tab3.png","mbImg":""},
+        {"img":"images/banner/banner4.jpg", "id": "b1", "link":"#","tabImg":"images/banner/banner-tab4.png","mbImg":""},
+        {"img":"images/banner/banner5.jpg", "id": "b1", "link":"#","tabImg":"images/banner/banner-tab5.png","mbImg":""}
     ],
     "news":[
         {"title":"드로잉 강의(일반강의) 수강신청시 스타터키트 지원", "date":"2024. 11. 23일 까지"},

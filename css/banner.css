@@ -16,6 +16,7 @@
 .sw-banner img {
   /* display: inline-block; */
   position: relative;
+  /* width: 100%; */
 }
 .sw-banner .swiper-slide::before {
   content: "";
@@ -36,4 +37,9 @@
   left: 0;
   box-shadow: 0 0 5px #000;
   z-index: 96;
+}
+@media screen and (max-width:1231px) {
+  .sw-banner img{
+    width: 100%;
+  }
 }

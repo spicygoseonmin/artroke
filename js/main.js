@@ -245,14 +245,17 @@ window.addEventListener("load", function () {
     <div class="swiper-wrapper">
     `;
     BANNER.forEach(function (item) {
-      let tag = `
-      <div class="swiper-slide">
-                <a href="${item.link}" class="banner-img">
-                  <img src="${item.img}" alt="배너 이미지">
-                </a>
-              </div>
-      `;
-      html += tag;
+      let imgSrc =  window.innerWidth <= 480 ? item.mbImg : window.innerWidth <= 768 ? item.tabImg : item.img;
+      if (imgSrc) {
+        let tag = `
+        <div class="swiper-slide">
+            <a href="${item.link}" class="banner-img">
+                <img src="${imgSrc}" alt="배너 이미지">
+            </a>
+        </div>
+        `;
+        html += tag;
+    }
     });
     html += `
     </div></div>
@@ -266,6 +269,7 @@ window.addEventListener("load", function () {
   function showNews() {
     let html = ``;
     NEWS.forEach(function (item) {
+      
       let tag = `
       <li>
                 <h3>아트로크</h3>
