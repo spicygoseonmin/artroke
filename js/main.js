@@ -261,7 +261,16 @@ window.addEventListener("load", function () {
     </div></div>
     `;
     bannerTag.innerHTML = html;
+    // 
+    const swBanner = new Swiper(".sw-banner", {
+      slidesPerView: 1,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+    });
   }
+  window.addEventListener('resize', showBanner);
   // 금주의 소식
   let NEWS;
   let newsTag = this.document.getElementById("data-news");
@@ -284,13 +293,6 @@ window.addEventListener("load", function () {
     });
     newsTag.innerHTML = html;
     //
-    const swBanner = new Swiper(".sw-banner", {
-      slidesPerView: 1,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-      },
-    });
   }
   // 수강생 후기
   let REVIEW;

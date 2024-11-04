@@ -186,6 +186,9 @@
     .class-instructor-wrap{
         padding-top: 10px;
     }
+    .instructor-info{
+        font-size: 10px;
+    }
     .class-title{
         max-height: 45px;
         font-size: 13px;
@@ -195,4 +198,5 @@
         -webkit-box-orient: vertical;
         white-space: wrap;
     }
+    
 }
