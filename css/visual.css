@@ -10,11 +10,7 @@
   width: 100%;
   position: relative;
 }
-.practice-class {
-  position: relative;
-  display: block;
-  margin-top: 50px;
-}
+
 .student-work .inner h2 {
   color: #fff;
   margin-bottom: 2vw;

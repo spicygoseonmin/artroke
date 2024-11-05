@@ -147,6 +147,16 @@
     margin-top: 50px;
   }
 }
+@media screen and (max-width:768px) {
+  .community, .review{
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width:480px) {
+  .community, .review{
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width:550px) {
   .news-info {
     width: 65%;
