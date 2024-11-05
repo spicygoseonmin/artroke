@@ -155,7 +155,9 @@
               <li id="login-btn">
                 <a href="#" id="loginText"> 로그인 </a>
               </li>
-              <i class="fa-solid fa-user" id="loginIcon"></i>
+              <div id="loginIcon">
+                <img src="images/icon/o_profile.png" alt="유저 기본 프로필 이미지">
+              </div>
               <!-- 로그인했을떄 유저메뉴 -->
               <i class="fa-solid fa-user" style="display: none"></i>
               <li id="user-profile">
@@ -175,13 +177,12 @@
                 </div>
                 <div id="userInfoSecond">
                   <div class="userInfoSecond-img">
-                    <img src="images/icon/o_profile.png" alt="유저 아이콘">
+                    <img src="images/icon/o_profile.png" alt="유저 아이콘" />
                   </div>
                   <!-- <i class="fa-solid fa-user"></i> -->
                   <div id="userInfoId">
                     <!-- JS로 아이디 출력 -->
                   </div>
-                  
                 </div>
               </div>
               <div id="userInfoMid">
@@ -262,47 +263,47 @@
         <div id="cateAll">
           <ul>
             <li>
-              <h3 id="cateNomal">
+              <h3 id="cateHard">
                 입시강의
+                <i class="fa-solid fa-chevron-down"></i>
+              </h3>
+            </li>
+            <div id="cateline"></div>
+            <li class="catelistHard" style="display: none"><a href="c_study_class.html">소묘</a></li>
+            <li class="catelistHard" style="display: none"><a href="c_study_class.html">서양화</a></li>
+            <li class="catelistHard" style="display: none"><a href="c_study_class.html">동양화</a></li>
+            <li class="catelistHard" style="display: none"><a href="c_study_class.html">디자인</a></li>
+            <li class="catelistHard" style="display: none"><a href="c_study_class.html">만화/애니메이션</a></li>
+            <li class="catelistHard" id="catelisthard" style="display: none"><a href="c_study_class.html">포토샵/일러스트레이터</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h3 id="cateNomal">
+                취미강의
                 <i class="fa-solid fa-chevron-down"></i>
               </h3>
               <div id="cateline"></div>
               <div id="cateAllList">
                 <ul id="cateNomalListLeft">
-                  <li>소묘</li>
-                  <li>수채화</li>
-                  <li>유화</li>
-                  <li>아크릴화</li>
-                  <li>디지털 드로잉</li>
-                  <li>조소/모델링</li>
+                  <li><a href="c_study_class.html">소묘</a></li>
+                  <li><a href="c_study_class.html">수채화</a></li>
+                  <li><a href="c_study_class.html">유화</a></li>
+                  <li><a href="c_study_class.html">아크릴화</a></li>
+                  <li><a href="t_study_class.html">디지털 드로잉</a></li>
+                  <li><a href="t_study_class.html">조소/모델링</a></li>
                 </ul>
                 <ul id="cateNomalListRight">
-                  <li>만화 / 애니메이션</li>
-                  <li>공예</li>
-                  <li>포토샵 / 일러스트레이터</li>
-                  <li>이모티콘 제작</li>
-                  <li>종이접기</li>
-                  <li>뜨게질</li>
+                  <li><a href="t_study_class.html">만화 / 애니메이션</a></li>
+                  <li><a href="t_study_class.html">공예</a></li>
+                  <li><a href="t_study_class.html">포토샵 / 일러스트레이터</a></li>
+                  <li><a href="t_study_class.html">이모티콘 제작</a></li>
+                  <li><a href="t_study_class.html">종이접기</a></li>
+                  <li><a href="t_study_class.html">뜨게질</a></li>
                 </ul>
               </div>
             </li>
           </ul>
-          <ul>
-            <li>
-              <h3 id="cateHard">
-                취미강의
-                <i class="fa-solid fa-chevron-down"></i>
-              </h3>
-            </li>
-            <div id="cateline"></div>
-            <li class="catelistHard" style="display: none">소묘</li>
-            <li class="catelistHard" style="display: none">서양화</li>
-            <li class="catelistHard" style="display: none">동양화</li>
-            <li class="catelistHard" style="display: none">디자인</li>
-            <li class="catelistHard" style="display: none">조소</li>
-            <li class="catelistHard" style="display: none">만화/애니메이션</li>
-            <li class="catelistHard" id="catelisthard" style="display: none">포토샵/일러스트레이터</li>
-          </ul>
+
           <a href="community.html"><h3>커뮤니티</h3></a>
           <div id="cateline"></div>
           <a href="news.html"><h3>뉴스</h3></a>
