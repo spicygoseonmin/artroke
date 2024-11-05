@@ -1,21 +1,92 @@
 @charset "utf-8";
 .champ_wrap {
   width: 100%;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
-.champ_wrap > ul {
+.champ_wrap > .champ_list {
+  background-color: black;
+  /* padding: 20px 0; */
+}
+.champ_wrap > .champ_list > .inner{
+    padding: 0;
+}
+.champ_wrap > .champ_list > .inner > ul {
   width: 100%;
   max-height: 600px;
   display: flex;
+  gap: 20px;
+  padding: 20px 20px;
+  overflow: hidden;
 }
-.champ_wrap > ul > li {
-  border: 1px solid #ccc;
+.champ_wrap > .champ_list > .inner > ul > li {
+  position: relative;
+  width: 100%;
+  /* border: 1px solid #ccc; */
+  transform: translateY(100%);
+  transition: all 0.4s ease-in-out;
 }
-.champ_wrap > ul > li > .img_wrap {
+.champ_wrap > .champ_list > .inner > ul > li.active_up {
+  transform: translateY(0);
+}
+/* 수상 */
+.champ_wrap > .champ_list > .inner > ul > li > .prize {
+  z-index: 9;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 60px;
+  width: 60px;
+  background-color: coral;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 1px 0 #cc320b, 0 2px 0 #cc320b, 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 #cc320b, 0 2px 0 #cc320b, 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 이미지 */
+.champ_wrap > .champ_list > .inner > ul > li > .img_wrap {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.champ_wrap > .champ_list > .inner > ul > li > .img_wrap > a {
   width: 100%;
 }
-.champ_wrap > ul > li > .img_wrap > a {
+.champ_wrap > .champ_list > .inner > ul > li > .img_wrap > a > img {
   width: 100%;
+  display: block;
+  position: relative;
 }
-.champ_wrap > ul > li > .img_wrap > a > img {
+
+/* 내용 */
+.champ_wrap > .champ_list > .inner > ul > li > .text_wrap {
+  background-color: #fff;
+  padding: 10px;
+}
+.champ_wrap > .champ_list > .inner > ul > li > .text_wrap > .top {
+  display: flex;
+  flex-wrap: wrap;
+}
+.champ_wrap > .champ_list > .inner > ul > li > .text_wrap > .top > .art_k {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-top: 4px;
+}
+.champ_wrap > .champ_list > .inner > ul > li > .text_wrap > .top > .contest_name {
   width: 100%;
+  font-weight: 600;
+}
+
+.champ_wrap > .champ_list > .inner > ul > li > .text_wrap > .username {
+  text-align: right;
+  font-size: 14px;
 }
