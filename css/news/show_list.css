@@ -25,7 +25,7 @@
 
 .constest_bottom {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
 }
 .constest_bottom > .title {
   margin-top: 50px;
@@ -123,7 +123,7 @@
 }
 @media screen and (max-width: 768px) {
   .constest_bottom > .title {
-    margin-top: 30px;
+    margin-top: 80px;
   }
   .constest_bottom > .con_menu > .con_menu_list > li {
     font-size: 14px;
