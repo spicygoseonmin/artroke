@@ -155,7 +155,7 @@
                 <a href="#" id="loginText"> 로그인 </a>
               </li>
               <div id="loginIcon">
-                <img src="images/icon/o_profile.png" alt="유저 기본 프로필 이미지">
+                <img src="images/icon/o_profile.png" alt="유저 기본 프로필 이미지" />
               </div>
               <!-- 로그인했을떄 유저메뉴 -->
               <i class="fa-solid fa-user" style="display: none"></i>
@@ -187,7 +187,11 @@
               <div id="userInfoMid">
                 <div id="userInfoNotice">
                   <ul>
-                    <li id="notice">알림<i class="fa-solid fa-chevron-down"></i></li>
+                    <li id="notice" style="cursor: pointer">
+                      알림
+                      <i class="fa-solid fa-chevron-down" id="iconDownNotice"></i>
+                      <i class="fa-solid fa-chevron-up" id="iconUpNotice" style="display: none"></i>
+                    </li>
                     <div id="line"></div>
                     <ul id="noticeNone" style="display: none">
                       <li><p>알림내용</p></li>
@@ -264,7 +268,8 @@
             <li>
               <h3 id="cateHard">
                 입시강의
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down" id="iconDown"></i>
+                <i class="fa-solid fa-chevron-up" id="iconUp" style="display: none"></i>
               </h3>
             </li>
             <div id="cateline"></div>
@@ -277,12 +282,13 @@
           </ul>
           <ul>
             <li>
-              <h3 id="cateNomal">
+              <h3 id="cateNomal" style="cursor: pointer">
                 취미강의
-                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-down" id="iconDownNomal"></i>
+                <i class="fa-solid fa-chevron-up" id="iconUpNomal" style="display: none"></i>
               </h3>
               <div id="cateline"></div>
-              <div id="cateAllList">
+              <div id="cateAllList" style="display: none">
                 <ul id="cateNomalListLeft">
                   <li><a href="c_study_class.html">소묘</a></li>
                   <li><a href="c_study_class.html">수채화</a></li>
@@ -312,7 +318,7 @@
       </div>
       <!-- 비주얼 -->
       <div class="visual">
-        <img src="images/visual/visual_2.png" alt="비주얼 이미지" class="web-visual-img"/>
+        <img src="images/visual/visual_2.png" alt="비주얼 이미지" class="web-visual-img" />
         <div class="student-work">
           <div class="inner">
             <h2>수강생 작품</h2>

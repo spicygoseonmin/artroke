@@ -135,7 +135,7 @@ input {
   font-size: 14px;
   cursor: pointer;
   float: left;
-  margin-top: 6px;
+  margin-top: 3px;
   accent-color: #ff370b;
   width: 14px;
   height: 14px;
@@ -144,13 +144,12 @@ input {
 }
 label[for="idSave"] {
   cursor: pointer;
-  font: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 #idSave input {
   margin-right: 10px;
 }
-/*  */
-
 #userInfoFind {
   position: relative;
   display: block;
@@ -315,20 +314,27 @@ label[for="idSave"] {
   }
   #idSave {
     display: flex;
-    align-items: center;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    float: left;
+    margin-top: 3px;
+    accent-color: #ff370b;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    margin-right: 10px;
   }
   #idSave input {
     margin-right: 10px;
   }
-  /*  */
-  #idSave input[type="checkbox"] {
-    accent-color: #ff370b;
-    width: 13px;
-    height: 13px;
+  label[for="idSave"] {
+    cursor: pointer;
+    font-size: 12px;
     text-align: center;
   }
+  /*  */
+ 
   #userInfoFind {
     position: relative;
     display: block;

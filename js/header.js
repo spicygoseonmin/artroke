@@ -4,7 +4,8 @@ window.addEventListener("load", function () {
   const loginIcon = document.getElementById("loginIcon");
   const userInfoNickName = document.getElementById("userInfoNickName");
   const userInfoId = document.getElementById("userInfoId");
- 
+  const iconDownNomal = document.getElementById("iconDownNomal");
+  const iconUpNomal = document.getElementById("iconUpNomal");
   const logOut = document.getElementById("logOut");
   const iconContainer = document.getElementById("iconContainer");
   const userInfo = document.getElementById("userInfo");
@@ -29,6 +30,21 @@ window.addEventListener("load", function () {
   const cateBox = document.querySelector(".cate-box");
   const cateBack = document.querySelector(".cate-background");
   const floatingBtn = this.document.querySelector(".floating-btn");
+  const iconDown = document.getElementById("iconDown");
+  const iconUp = document.getElementById("iconUp");
+  const iconDownNotice = document.getElementById("iconDownNotice");
+  const iconUpNotice = document.getElementById("iconUpNotice");
+  
+
+  cateHard.addEventListener("click", function() {
+    if (iconDown.style.display === "none") {
+      iconDown.style.display = "inline";
+      iconUp.style.display = "none";
+    } else {
+      iconDown.style.display = "none";
+      iconUp.style.display = "inline";
+    }
+  });
   // 로그인 상태에 따른 UI 업데이트
   const userFind = JSON.parse(localStorage.getItem("userFind"));
 
@@ -96,7 +112,18 @@ window.addEventListener("load", function () {
   notice.addEventListener("click", function () {
     noticeNone.style.display = noticeNone.style.display === "block" ? "none" : "block";
   });
-
+  notice.addEventListener("click", function() {
+    // 아이콘 토글 및 알림 리스트 표시/숨김
+    if (iconDownNotice.style.display === "none") {
+      iconDownNotice.style.display = "inline";
+      iconUpNotice.style.display = "none";
+      noticeNone.style.display = "none"; // 알림 내용 숨김
+    } else {
+      iconDownNotice.style.display = "none";
+      iconUpNotice.style.display = "inline";
+      noticeNone.style.display = "block"; // 알림 내용 표시
+    }
+  });
   cateHard.addEventListener("click", function () {
     catelistHard.forEach((item) => {
       item.style.display = item.style.display === "block" ? "none" : "block";
@@ -106,7 +133,18 @@ window.addEventListener("load", function () {
   cateNomal.addEventListener("click", function () {
     cateAllList.style.display = cateAllList.style.display === "block" ? "none" : "block";
   });
-
+  cateNomal.addEventListener("click", function() {
+    // 아이콘 토글 및 리스트 표시/숨김
+    if (iconDownNomal.style.display === "none") {
+      iconDownNomal.style.display = "inline";
+      iconUpNomal.style.display = "none";
+      cateAllList.style.display = "none"; // 리스트 숨김
+    } else {
+      iconDownNomal.style.display = "none";
+      iconUpNomal.style.display = "inline";
+      cateAllList.style.display = "block"; // 리스트 표시
+    }
+  });
   // 삼각바 클릭 시 카테고리 바 토글 애니메이션
   cateBar.addEventListener("click", function () {
     cateBarClick.style.display = "block";
