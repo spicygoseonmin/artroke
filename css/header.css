@@ -136,7 +136,7 @@
 }
 .search-move {
   position: relative;
-  width: 30%;
+  width: 40%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -146,7 +146,7 @@
 #searchDelete {
   position: fixed;
   width: 80%;
-  top: 65px;
+  top: 85px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
@@ -161,7 +161,7 @@
 }
 #searchAfter {
   position: absolute;
-  right: -20px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
@@ -175,8 +175,6 @@
 #searchList {
   position: relative;
   display: block;
-  left: 0;
-  top: 0;
 }
 #searchDelete p {
   text-align: left;
@@ -217,13 +215,13 @@
 #searchBar {
   position: relative;
   display: block;
-  width: 30vw;
-  min-width: 300px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   height: 45px;
   background-color: #f6f6f6;
   border-radius: 40px;
   padding-left: 20px;
-  padding-right: 45px;
   line-height: 40px;
   font-size: 13px;
   border: 0;
@@ -239,8 +237,8 @@
 #searchXmark {
   position: absolute;
   display: block;
-  top: -10px;
-  right: -30px;
+  top: -20px;
+  right: -35px;
 }
 #iconContainer {
   min-width: 120px;
@@ -326,8 +324,6 @@
   #searchList {
     position: relative;
     display: block;
-    left: 0;
-    top: 0;
   }
 
   @keyframes slideDown {
@@ -467,7 +463,7 @@
   #searchDelete {
     position: fixed;
     width: 80%;
-    top: 65px;
+    top: 85px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
@@ -477,38 +473,41 @@
   }
   #searchAfter {
     position: absolute;
-    right: -20px;
+
     top: 50%;
     transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     background: url(../images/btnSearch.png) no-repeat center;
     cursor: pointer;
-    font-size: 0;
+    background-size: cover;
     display: block;
     border: 0;
   }
   #searchDelete p {
+    position: relative;
     text-align: left;
     display: block;
-    margin-left: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-size: 14px;
   }
   #searchNow {
     margin-bottom: 50px;
   }
+ 
   #li {
     display: flex;
-    justify-content: space-between;
-    margin-left: 20%;
-    margin-right: 33%;
-    width: 50%;
+    position: relative;
+    justify-content: center;
+    font-size: clamp(13px, 3vw, 15px);
   }
   #li li {
-    padding: 0;
-    display: inline-block;
     text-align: left;
+    width: 100%;
   }
   #li li span {
     color: #ff370b;
@@ -519,24 +518,22 @@
   #popularKeywords #li li {
     text-align: left;
     width: 100%;
-    min-width: 130px;
+    min-width: 120px;
   }
 
   #searchBar {
     position: relative;
     display: block;
-    width: 40vw;
+    width: 100%;
+    min-width: 180px;
     height: 35px;
-    min-width: 270px;
     background-color: #f6f6f6;
     border-radius: 40px;
-    padding-left: 20px;
-    padding-right: 45px;
     line-height: 40px;
     font-size: 13px;
     border: 0;
-    left: 40%;
-    transform: translateX(-40%);
+    left: 50%;
+    transform: translateX(-50%);
   }
   #searchShow {
     font-size: 18px;
@@ -549,8 +546,8 @@
   #searchXmark {
     position: absolute;
     display: block;
-    top: -10px;
-    right: -100px;
+    top: -15px;
+    right: -20px;
   }
 
   #iconContainer {
@@ -856,13 +853,13 @@
   }
   #searchAfter {
     position: absolute;
-    right: -70px;
+
     top: 50%;
     transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     background: url(../images/btnSearch.png) no-repeat center;
-    background-size: 15px 15px;
+    background-size: cover;
     cursor: pointer;
     display: block;
     border: 0;
@@ -871,21 +868,17 @@
     font-size: 14px;
     text-align: left;
     display: block;
-    margin-left: 10%;
+    margin-left: 33%;
     margin-top: 20px;
-    margin-bottom: 17px;
+    margin-bottom: 40px;
   }
   #searchList {
     position: relative;
     display: block;
-    left: 0;
-    top: 0;
   }
   #li {
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 33%;
     width: 100%;
     font-size: 14px;
   }
@@ -934,6 +927,7 @@
     margin-bottom: 10px;
     font-size: 13px;
   }
+
   #line {
     border: 1px solid #e9e9e9;
     margin-bottom: 10px;
