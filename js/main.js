@@ -47,8 +47,10 @@ window.addEventListener("load", function () {
     PRACTICE_CLASS.forEach(function (item) {
       let tag = `
               <div class="swiper-slide pop_class_li">
-        <a href="#" class="pop_class_info">
+        <a href="class.html" class="pop_class_info">
+          <div class="class-img">
           <img src="${item.pic}" alt="실기강의 이미지" class="class-pic"/>
+          </div>
           <span class="rank">${item.rank}</span>
           <div class="mark"></div>
           <div class="class-txt-wrap">
@@ -135,6 +137,16 @@ window.addEventListener("load", function () {
         item.classList.toggle("active");
       });
     });
+    // 
+    const classImg = document.querySelectorAll(".class-img")
+    classImg.forEach((img) => {
+      const classImgWidth = img.getBoundingClientRect().width;
+      const classImgHeight = classImgWidth * 0.62;
+      // console.log(classImgHeight);
+    
+      img.style.height = `${classImgHeight}px`;
+    });
+    // 
     const t_class_btn = document.getElementById("t_class_btn");
     const t_class_wrap = document.querySelector(".t_sw-class_wrapper");
     t_class_btn.addEventListener("click", function () {
@@ -144,8 +156,10 @@ window.addEventListener("load", function () {
       <a href="t_study_class.html">자세히보기 <i class="fa-solid fa-angle-right"></i></a>
       `;
       t_class_btn.innerHTML = btnTag;
+      
     });
   }
+  window.addEventListener('resize', showPracticeClass);
   // -------
   // 일반강의
   let NORMAL_CLASS;
@@ -160,7 +174,9 @@ window.addEventListener("load", function () {
       let tag = `
               <div class="swiper-slide pop_class_li">
         <a href="#" class="pop_class_info">
+        <div class="class-img">
           <img src="${item.pic}" alt="일반강의 이미지" class="class-pic" />
+        </div>
           <span class="rank">${item.rank}</span>
           <div class="mark"></div>
           <div class="class-txt-wrap">
@@ -248,6 +264,16 @@ window.addEventListener("load", function () {
         item.classList.toggle("active");
       });
     });
+    // 
+    const classImg = document.querySelectorAll(".class-img")
+    classImg.forEach((img) => {
+      const classImgWidth = img.getBoundingClientRect().width;
+      const classImgHeight = classImgWidth * 0.62;
+      // console.log(classImgHeight);
+    
+      img.style.height = `${classImgHeight}px`;
+    });
+    // 
     const c_class_btn = document.getElementById("c_class_btn");
     const c_class_wrap = document.querySelector(".c_sw-class_wrapper");
     c_class_btn.addEventListener("click", function () {
@@ -259,6 +285,7 @@ window.addEventListener("load", function () {
       c_class_btn.innerHTML = btnTag;
     });
   }
+  window.addEventListener('resize', showNormalClass);
   // 강사 소개
   // 배너
   let BANNER;
