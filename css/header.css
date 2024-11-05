@@ -145,9 +145,10 @@
 
 #searchDelete {
   position: fixed;
-  width: 100%;
+  width: 80%;
   top: 65px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
   margin: auto;
   text-align: center;
@@ -160,7 +161,7 @@
 }
 #searchAfter {
   position: absolute;
-  right: 50px;
+  right: -20px;
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
@@ -204,7 +205,7 @@
   color: #ff370b;
 }
 #popularKeywords {
-  width: 100vw;
+  width: 100%;
   line-height: 30px;
 }
 #popularKeywords #li li {
@@ -217,6 +218,7 @@
   position: relative;
   display: block;
   width: 30vw;
+  min-width: 300px;
   height: 45px;
   background-color: #f6f6f6;
   border-radius: 40px;
@@ -260,6 +262,7 @@
   padding: 0 10px;
   line-height: 35px;
   cursor: pointer;
+  font-weight: 500;
 }
 #logOut {
   color: #ff370b;
@@ -464,9 +467,10 @@
   }
   #searchDelete {
     position: fixed;
-    width: 100%;
+    width: 80%;
     top: 65px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #fff;
     margin: auto;
     text-align: center;
@@ -489,7 +493,7 @@
 
   #searchAfter {
     position: absolute;
-    right: -50px;
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
     width: 18px;
@@ -537,7 +541,7 @@
   #searchBar {
     position: relative;
     display: block;
-    width: 50vw;
+    width: 40vw;
     height: 35px;
     min-width: 270px;
     background-color: #f6f6f6;
