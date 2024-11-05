@@ -500,7 +500,7 @@ window.addEventListener("load", function () {
     centeredSlides: true,
     spaceBetween: 30,
     breakpoints: {
-      768: {
+      769: {
         spaceBetween: 30,
         slidesPerView: 5,
       },
