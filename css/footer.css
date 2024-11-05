@@ -109,6 +109,9 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .footer{
+        margin-top: 30px;
+    }
 }
 @media screen and (max-width:620px) {
     .ft-top-left{
@@ -151,6 +154,9 @@
     }
     .cs-btns{
         gap: 20px;
+    }
+    .footer{   
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 360px) {
