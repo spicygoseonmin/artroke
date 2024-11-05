@@ -36,6 +36,7 @@
   width: 100%;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 .constest_notice > .constest_top > .constest_list_wrap > li {
   width: calc(100% / 3 - 10px);
