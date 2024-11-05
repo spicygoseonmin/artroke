@@ -1,59 +1,67 @@
 @charset "utf-8";
 
-.visual{
-    width: 100%;
-    margin-top: 76px;
-    position: relative;
-    display: block;
+.visual {
+  width: 100%;
+  margin-top: 76px;
+  position: relative;
+  display: block;
 }
-.visual>img{
-    width: 100%;
-    position: relative;
-    display: block;
+.visual > img {
+  width: 100%;
+  position: relative;
 }
-.practice-class{
-    position: relative;
-    display: block;
-    margin-top: 50px;
+.practice-class {
+  position: relative;
+  display: block;
+  margin-top: 50px;
 }
-.student-work .inner h2{
-    color: #fff;
-    margin-bottom: 2vw;
+.student-work .inner h2 {
+  color: #fff;
+  margin-bottom: 2vw;
 }
-.student-work{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 95;
-    background-color: rgba(0,0,0,0.5);
-    padding: 40px 0;
+.student-work {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 95;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 0;
 }
-.sw-student .swiper-slide{
-    display: flex;
-    justify-content: center;
+.sw-student .swiper-slide {
+  display: flex;
+  justify-content: center;
 }
-.student-work-img{
-    height: 13vw;
+.mb-visual-img {
+  display: none;
 }
-.sw-student img{
-    height: 100%;
-    object-fit: cover;
+.student-work-img {
+  height: 13vw;
 }
-@media screen and (max-width:1231px) {
-    .student-work{
-        padding: 20px 0;
-    }
-    .student-work-img{
-        height: 15vw;
-    }
+.sw-student img {
+  height: 100%;
+  object-fit: cover;
 }
-@media screen and (max-width:767px) {
-    .student-work{
+@media screen and (max-width: 1231px) {
+  .student-work {
+    padding: 20px 0;
+  }
+  .student-work-img {
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* .student-work{
         position: relative;
         padding: 5vw 0;
         background-color: rgba(0,0,0,0.9);
-    }
-    .student-work-img{
-        height: 35vw;
-    }
+    } */
+  .mb-visual-img {
+    display: block;
+  }
+  .web-visual-img{
+    display: none;
+  }
+  .student-work-img {
+    height: 35vw;
+  }
 }
