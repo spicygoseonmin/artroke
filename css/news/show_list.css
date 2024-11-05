@@ -25,6 +25,7 @@
 
 .constest_bottom {
   width: 100%;
+  min-height: 500px;
 }
 .constest_bottom > .title {
   margin-top: 50px;
@@ -92,6 +93,23 @@
 }
 .con_news_list > div.active {
   display: block;
+}
+.more_btn {
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: #ff4100;
+  /* padding: 10px 40px; */
+  height: 39px;
+  width: 116px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1232px) {
