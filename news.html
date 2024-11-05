@@ -41,6 +41,7 @@
     <!-- js -->
     <script src="js/news/news_header.js"></script>
     <script src="js/news/news_contest.js"></script>
+    <script src="js/news/news_champ_list.js"></script>
     <!-- Swiper 적용 -->
     <!-- link Swiper's css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -48,6 +49,12 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS 적용 css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS 적용 js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 웨이 포인트 적용 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <div class="wrap">
@@ -286,671 +293,740 @@
       </div>
       <div class="news">
         <div class="inner">
-          <div class="alarm_contest"">
-          <h2>공모전 / 대회 알림 받기</h2>
-        </div>
-        <!-- 공모전 강의 공고 -->
-        <div class="constest_notice">
-          <!-- 공모전 특강 클래스 -->
-          <h2 class="title">공모전 특강 클래스</h2>
-          <div class="constest_top">
-            <ul class="constest_list_wrap">
-              <li>
-                <div class="contestBox">
-                  <p class="d_day">D-40</p>
-                  <div class="contestImg">
-                    <img src="images/news/contest_class/1.png" alt="공모전이미지1" />
-                  </div>
-                  <div class="contestinfo">
-                    <div class="top">
-                      <p class="title">서울라이트 디지털 콘테스트 공모전</p>
-                      <p class="age_ap design-contest">디자인</p>
-                    </div>
-                    <div class="bottom">
-                      <p class="t_info">김양현</p>
-                      <p class="c_day">2024-12-12</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contestBox">
-                  <p class="d_day">D-34</p>
-                  <div class="contestImg">
-                    <img src="images/news/contest_class/2.png" alt="공모전이미지1" />
-                  </div>
-                  <div class="contestinfo">
-                    <div class="top">
-                      <p class="title">강북구 캐릭터 공모전</p>
-                      <p class="age_ap cartoon-contest">만화/캐릭터</p>
-                    </div>
-                    <div class="bottom">
-                      <p class="t_info">김양현</p>
-                      <p class="c_day">2024-12-12</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contestBox">
-                  <p class="d_day">D-32</p>
-                  <div class="contestImg">
-                    <img src="images/news/contest_class/3.png" alt="공모전이미지1" />
-                  </div>
-                  <div class="contestinfo">
-                    <div class="top">
-                      <p class="title">14TH 미스터 블루 웹툰 공모전</p>
-                      <p class="age_ap cartoon-contest">만화/캐릭터</p>
-                    </div>
-                    <div class="bottom">
-                      <p class="t_info">김양현</p>
-                      <p class="c_day">2024-12-12</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contestBox">
-                  <p class="d_day">D-29</p>
-                  <div class="contestImg">
-                    <img src="images/news/contest_class/4.png" alt="공모전이미지1" />
-                  </div>
-                  <div class="contestinfo">
-                    <div class="top">
-                      <p class="title">PIGMA 10주년 일러스트 공모전</p>
-                      <p class="age_ap illust-contest">일러스트</p>
-                    </div>
-                    <div class="bottom">
-                      <p class="t_info">김양현</p>
-                      <p class="c_day">2024-12-12</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contestBox">
-                  <p class="d_day">D-20</p>
-                  <div class="contestImg">
-                    <img src="images/news/contest_class/5.png" alt="공모전이미지1" />
-                  </div>
-                  <div class="contestinfo">
-                    <div class="top">
-                      <p class="title">상상대로 BOOK 일러스트 공모전</p>
-                      <p class="age_ap illust-contest">일러스트</p>
-                    </div>
-                    <div class="bottom">
-                      <p class="t_info">김양현</p>
-                      <p class="c_day">2024-12-12</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="contestBox">
-                  <p class="d_day">D-18</p>
-                  <div class="contestImg">
-                    <img src="images/news/contest_class/6.png" alt="공모전이미지1" />
-                  </div>
-                  <div class="contestinfo">
-                    <div class="top">
-                      <p class="title">아트코리아 국제 미술 대전</p>
-                      <p class="age_ap youth-contest">청소년</p>
-                    </div>
-                    <div class="bottom">
-                      <p class="t_info">김양현</p>
-                      <p class="c_day">2024-12-12</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+          <div class="alarm_contest">
+            <h2>공모전 / 대회 알림 받기</h2>
           </div>
-          <!-- 분야별 최신 공모전 -->
-          <div class="constest_bottom">
-            <h2 class="title">분야별 최신 공모전</h2>
-            <div class="con_menu">
-              <ul class="con_menu_list">
-                <li class="active">전체</li>
-                <li>디자인</li>
-                <li>성인</li>
-                <li>청소년</li>
-                <li>아동</li>
-                <li>실기대회</li>
-                <li>일러스트</li>
-                <li>만화/캐릭터</li>
+          <!-- 공모전 강의 공고 -->
+          <div class="constest_notice">
+            <!-- 공모전 특강 클래스 -->
+            <h2 class="title">공모전 특강 클래스</h2>
+            <div class="constest_top">
+              <ul class="constest_list_wrap">
+                <li>
+                  <div class="contestBox">
+                    <p class="d_day">D-40</p>
+                    <div class="contestImg">
+                      <img src="images/news/contest_class/1.png" alt="공모전이미지1" />
+                    </div>
+                    <div class="contestinfo">
+                      <div class="top">
+                        <p class="title">서울라이트 디지털 콘테스트 공모전</p>
+                        <p class="age_ap design-contest">디자인</p>
+                      </div>
+                      <div class="bottom">
+                        <p class="t_info">김양현</p>
+                        <p class="c_day">2024-12-12</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contestBox">
+                    <p class="d_day">D-34</p>
+                    <div class="contestImg">
+                      <img src="images/news/contest_class/2.png" alt="공모전이미지1" />
+                    </div>
+                    <div class="contestinfo">
+                      <div class="top">
+                        <p class="title">강북구 캐릭터 공모전</p>
+                        <p class="age_ap cartoon-contest">만화/캐릭터</p>
+                      </div>
+                      <div class="bottom">
+                        <p class="t_info">김양현</p>
+                        <p class="c_day">2024-12-12</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contestBox">
+                    <p class="d_day">D-32</p>
+                    <div class="contestImg">
+                      <img src="images/news/contest_class/3.png" alt="공모전이미지1" />
+                    </div>
+                    <div class="contestinfo">
+                      <div class="top">
+                        <p class="title">14TH 미스터 블루 웹툰 공모전</p>
+                        <p class="age_ap cartoon-contest">만화/캐릭터</p>
+                      </div>
+                      <div class="bottom">
+                        <p class="t_info">김양현</p>
+                        <p class="c_day">2024-12-12</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contestBox">
+                    <p class="d_day">D-29</p>
+                    <div class="contestImg">
+                      <img src="images/news/contest_class/4.png" alt="공모전이미지1" />
+                    </div>
+                    <div class="contestinfo">
+                      <div class="top">
+                        <p class="title">PIGMA 10주년 일러스트 공모전</p>
+                        <p class="age_ap illust-contest">일러스트</p>
+                      </div>
+                      <div class="bottom">
+                        <p class="t_info">김양현</p>
+                        <p class="c_day">2024-12-12</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contestBox">
+                    <p class="d_day">D-20</p>
+                    <div class="contestImg">
+                      <img src="images/news/contest_class/5.png" alt="공모전이미지1" />
+                    </div>
+                    <div class="contestinfo">
+                      <div class="top">
+                        <p class="title">상상대로 BOOK 일러스트 공모전</p>
+                        <p class="age_ap illust-contest">일러스트</p>
+                      </div>
+                      <div class="bottom">
+                        <p class="t_info">김양현</p>
+                        <p class="c_day">2024-12-12</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="contestBox">
+                    <p class="d_day">D-18</p>
+                    <div class="contestImg">
+                      <img src="images/news/contest_class/6.png" alt="공모전이미지1" />
+                    </div>
+                    <div class="contestinfo">
+                      <div class="top">
+                        <p class="title">아트코리아 국제 미술 대전</p>
+                        <p class="age_ap youth-contest">청소년</p>
+                      </div>
+                      <div class="bottom">
+                        <p class="t_info">김양현</p>
+                        <p class="c_day">2024-12-12</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
-            <!-- 전체 -->
-            <div class="con_news_list">
-              <div class="con_all active">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
+            <!-- 분야별 최신 공모전 -->
+            <div class="constest_bottom">
+              <h2 class="title">분야별 최신 공모전</h2>
+              <div class="con_menu">
+                <ul class="con_menu_list">
+                  <li class="active">전체</li>
+                  <li>디자인</li>
+                  <li>성인</li>
+                  <li>청소년</li>
+                  <li>아동</li>
+                  <li>실기대회</li>
+                  <li>일러스트</li>
+                  <li>만화/캐릭터</li>
                 </ul>
-                <button class="more_btn">더보기</button>
               </div>
-              <!-- 디자인 -->
-              <div class="con_design">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title design-contest">디자인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
-              </div>
-              <!-- 성인 -->
-              <div class="con_adult">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title adult-contest">성인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title adult-contest">성인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title adult-contest">성인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title adult-contest">성인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title adult-contest">성인</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
-              </div>
-              <div class="con_youth">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title youth-contest">청소년</div>
-                        <div class="title">아트코리아 국제 미술 대전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title youth-contest">청소년</div>
-                        <div class="title">아트코리아 국제 미술 대전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title youth-contest">청소년</div>
-                        <div class="title">아트코리아 국제 미술 대전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title youth-contest">청소년</div>
-                        <div class="title">아트코리아 국제 미술 대전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title youth-contest">청소년</div>
-                        <div class="title">아트코리아 국제 미술 대전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
-              </div>
-              <!-- 아동 -->
-              <div class="con_kids">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title kids-contest">아동</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title kids-contest">아동</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title kids-contest">아동</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title kids-contest">아동</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title kids-contest">아동</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
-              </div>
-              <!-- 실기대회 -->
-              <div class="con_uni">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title univer-contest">실기 대회</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title univer-contest">실기 대회</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title univer-contest">실기 대회</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title univer-contest">실기 대회</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title univer-contest">실기 대회</div>
-                        <div class="title">서울라이트 디지털 콘테스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
-              </div>
-              <!-- 일러스트 -->
-              <div class="con_illust">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title illust-contest">일러스트</div>
-                        <div class="title">PIGMA 10주년 일러스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title illust-contest">일러스트</div>
-                        <div class="title">PIGMA 10주년 일러스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title illust-contest">일러스트</div>
-                        <div class="title">PIGMA 10주년 일러스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title illust-contest">일러스트</div>
-                        <div class="title">PIGMA 10주년 일러스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title illust-contest">일러스트</div>
-                        <div class="title">PIGMA 10주년 일러스트 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
-              </div>
-              <!-- 만화 -->
-              <div class="con_cartoon">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
-                        <div class="title">14TH 미스터 블루 웹툰 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
-                        <div class="title">14TH 미스터 블루 웹툰 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
-                        <div class="title">14TH 미스터 블루 웹툰 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
-                        <div class="title">14TH 미스터 블루 웹툰 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="top">
-                        <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
-                        <div class="title">14TH 미스터 블루 웹툰 공모전</div>
-                      </div>
-                      <div class="bottom">
-                        <div class="a-day">2024-12-12</div>
-                        <div class="d-day">D-40</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <button class="more_btn">더보기</button>
+              <!-- 전체 -->
+              <div class="con_news_list">
+                <div class="con_all active">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <!-- 디자인 -->
+                <div class="con_design">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title design-contest">디자인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <!-- 성인 -->
+                <div class="con_adult">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title adult-contest">성인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title adult-contest">성인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title adult-contest">성인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title adult-contest">성인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title adult-contest">성인</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <div class="con_youth">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title youth-contest">청소년</div>
+                          <div class="title">아트코리아 국제 미술 대전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title youth-contest">청소년</div>
+                          <div class="title">아트코리아 국제 미술 대전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title youth-contest">청소년</div>
+                          <div class="title">아트코리아 국제 미술 대전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title youth-contest">청소년</div>
+                          <div class="title">아트코리아 국제 미술 대전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title youth-contest">청소년</div>
+                          <div class="title">아트코리아 국제 미술 대전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <!-- 아동 -->
+                <div class="con_kids">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title kids-contest">아동</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title kids-contest">아동</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title kids-contest">아동</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title kids-contest">아동</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title kids-contest">아동</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <!-- 실기대회 -->
+                <div class="con_uni">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title univer-contest">실기 대회</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title univer-contest">실기 대회</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title univer-contest">실기 대회</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title univer-contest">실기 대회</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title univer-contest">실기 대회</div>
+                          <div class="title">서울라이트 디지털 콘테스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <!-- 일러스트 -->
+                <div class="con_illust">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title illust-contest">일러스트</div>
+                          <div class="title">PIGMA 10주년 일러스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title illust-contest">일러스트</div>
+                          <div class="title">PIGMA 10주년 일러스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title illust-contest">일러스트</div>
+                          <div class="title">PIGMA 10주년 일러스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title illust-contest">일러스트</div>
+                          <div class="title">PIGMA 10주년 일러스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title illust-contest">일러스트</div>
+                          <div class="title">PIGMA 10주년 일러스트 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
+                <!-- 만화 -->
+                <div class="con_cartoon">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
+                          <div class="title">14TH 미스터 블루 웹툰 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
+                          <div class="title">14TH 미스터 블루 웹툰 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
+                          <div class="title">14TH 미스터 블루 웹툰 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
+                          <div class="title">14TH 미스터 블루 웹툰 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="top">
+                          <div class="menu_list_title cartoon-contest">만화/캐릭터</div>
+                          <div class="title">14TH 미스터 블루 웹툰 공모전</div>
+                        </div>
+                        <div class="bottom">
+                          <div class="a-day">2024-12-12</div>
+                          <div class="d-day">D-40</div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="more_btn">더보기</button>
+                </div>
               </div>
             </div>
           </div>
-          <!-- 미술용품 특전 -->
+        </div>
+        <!-- 이달의 수상 리스트 -->
+        <div class="champ_wrap">
+          <div class="inner">
+            <h2 class="title">이달의 수상 작품</h2>
+          </div>
+          <div class="champ_list">
+            <div class="inner">
+              <ul>
+                <li>
+                  <!-- 수상 -->
+                  <div class="prize">대상</div>
+                  <div class="img_wrap">
+                    <a href="#">
+                      <img src="images/news/s-c/6.png" alt="수상_작품_이미지" />
+                    </a>
+                  </div>
+                  <div class="text_wrap">
+                    <div class="top">
+                      <div class="art_k cartoon-contest">만화/캐릭터</div>
+                      <!-- 대회 이름 -->
+                      <div class="contest_name">부산광역시 시어 고등어 캐릭터 디자인 공모전</div>
+                    </div>
+                    <!-- 유저이름 -->
+                    <div class="username">김은아</div>
+                  </div>
+                </li>
+                <li>
+                  <!-- 수상 -->
+                  <div class="prize">대상</div>
+                  <div class="img_wrap">
+                    <a href="#">
+                      <img src="images/news/s-c/4.png" alt="수상_작품_이미지" />
+                    </a>
+                  </div>
+                  <div class="text_wrap">
+                    <div class="top">
+                      <div class="art_k cartoon-contest">만화/캐릭터</div>
+                      <!-- 대회 이름 -->
+                      <div class="contest_name">부산광역시 시어 고등어 캐릭터 디자인 공모전</div>
+                    </div>
+                    <!-- 유저이름 -->
+                    <div class="username">김은아</div>
+                  </div>
+                </li>
+                <li>
+                  <!-- 수상 -->
+                  <div class="prize">대상</div>
+                  <div class="img_wrap">
+                    <a href="#">
+                      <img src="images/news/s-c/5.png" alt="수상_작품_이미지" />
+                    </a>
+                  </div>
+                  <div class="text_wrap">
+                    <div class="top">
+                      <div class="art_k illust-contest">일러스트</div>
+                      <!-- 대회 이름 -->
+                      <div class="contest_name">부산광역시 시어 고등어 캐릭터 디자인 공모전</div>
+                    </div>
+                    <!-- 유저이름 -->
+                    <div class="username">김은아</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 미술용품 특전 -->
+        <div class="inner">
           <div class="tools_event">
             <div class="title_info">
               <h2 class="title">미술용품 특전</h2>
@@ -1059,81 +1135,6 @@
                 </ul>
               </div>
             </div>
-          </div>
-          <!-- 이달의 수상 리스트 -->
-          <div class="champ_wrap">
-            <h2 class="title">이달의 수상 작품</h2>
-            <ul>
-              <li>
-                <!-- 수상 -->
-                <div class="prize">대상</div>
-                <div class="img_wrap">
-                  <a href="#">
-                    <img src="images/news/s-c/6.png" alt="수상_작품_이미지" />
-                  </a>
-                </div>
-                <div class="text_wrap">
-                  <div class="top">
-                    <div class="art_k">만화/캐릭터</div>
-                    <!-- 대회 이름 -->
-                    <div class="context_name">부산광역시 시어 고등어 캐릭터 디자인 공모전</div>
-                  </div>
-                  <!-- 분야 -->
-                  <!-- 상금 -->
-                  <div class="rewords">1000만원</div>
-                  <!-- 유저이름 -->
-                  <div class="username">김은아</div>
-                  <!-- 후기 -->
-                  <div class="user_after">도리와 보리'는 부산시어인 고등어 관련 산업의 부가가치를 증대하고 시민에게 더욱 친숙하게 접근하고자 지난 2022년 캐릭터 공모전을 통해 탄생한 부산시어 대표 캐릭터인데요</div>
-                </div>
-              </li>
-              <li>
-                <!-- 수상 -->
-                <div class="prize">대상</div>
-                <div class="img_wrap">
-                  <a href="#">
-                    <img src="images/news/s-c/4.png" alt="수상_작품_이미지" />
-                  </a>
-                </div>
-                <div class="text_wrap">
-                  <div class="top">
-                    <div class="art_k">만화/캐릭터</div>
-                    <!-- 대회 이름 -->
-                    <div class="context_name">부산광역시 시어 고등어 캐릭터 디자인 공모전</div>
-                  </div>
-                  <!-- 분야 -->
-                  <!-- 상금 -->
-                  <div class="rewords">1000만원</div>
-                  <!-- 유저이름 -->
-                  <div class="username">김은아</div>
-                  <!-- 후기 -->
-                  <div class="user_after">도리와 보리'는 부산시어인 고등어 관련 산업의 부가가치를 증대하고 시민에게 더욱 친숙하게 접근하고자 지난 2022년 캐릭터 공모전을 통해 탄생한 부산시어 대표 캐릭터인데요</div>
-                </div>
-              </li>
-              <li>
-                <!-- 수상 -->
-                <div class="prize">대상</div>
-                <div class="img_wrap">
-                  <a href="#">
-                    <img src="images/news/s-c/5.png" alt="수상_작품_이미지" />
-                  </a>
-                </div>
-                <div class="text_wrap">
-                  <div class="top">
-                    <div class="art_k">만화/캐릭터</div>
-                    <!-- 대회 이름 -->
-                    <div class="context_name">부산광역시 시어 고등어 캐릭터 디자인 공모전</div>
-                  </div>
-                  <!-- 분야 -->
-                  <!-- 상금 -->
-                  <div class="rewords">1000만원</div>
-                  <!-- 유저이름 -->
-                  <div class="username">김은아</div>
-                  <!-- 후기 -->
-                  <div class="user_after">도리와 보리'는 부산시어인 고등어 관련 산업의 부가가치를 증대하고 시민에게 더욱 친숙하게 접근하고자 지난 2022년 캐릭터 공모전을 통해 탄생한 부산시어 대표 캐릭터인데요</div>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
