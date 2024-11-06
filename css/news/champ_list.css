@@ -11,6 +11,9 @@
 .champ_wrap > .inner > .title {
   margin-bottom: 10px;
 }
+.champ_wrap > .inner > p{
+  margin-bottom: 10px;
+}
 .champ_wrap > .champ_list > .inner {
   padding: 0;
 }
@@ -44,7 +47,7 @@
   left: -10px;
   height: 60px;
   width: 60px;
-  background-color: coral;
+  background-color: rgb(50, 184, 236);
   border-radius: 50%;
   font-weight: 700;
   font-size: 18px;
@@ -52,8 +55,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: 0 1px 0 #cc320b, 0 2px 0 #cc320b, 0 10px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 0 #cc320b, 0 2px 0 #cc320b, 0 10px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 1px 0 #0b3abb, 0 2px 0 #0b3abb, 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 #0b3abb, 0 2px 0 #0b3abb, 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.champ_wrap > .champ_list > .inner > ul > li > .prize.gold{
+  background-color: #ffae00;
+  text-shadow: 0 1px 0 #7e4b08, 0 2px 0 #7e4b08, 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 #7e4b08, 0 2px 0 #7e4b08, 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.champ_wrap > .champ_list > .inner > ul > li > .prize.silver{
+  background-color: darkgrey;
+  text-shadow: 0 1px 0 #303030, 0 2px 0 #303030, 0 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 #303030, 0 2px 0 #303030, 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* 이미지 */
@@ -105,7 +118,7 @@
 }
 @media screen and (max-width: 768px) {
   .champ_wrap > .inner {
-    padding: 0 10px;
+    padding: 0 30px;
   }
   .champ_wrap > .champ_list > .inner > ul > li > .text_wrap > .top > .contest_name {
     font-size: 2.4vw;
@@ -119,6 +132,9 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .champ_wrap > .inner {
+    padding: 0 10px;
+  }
   .champ_wrap > .champ_list > .inner > ul > li > .prize {
     height: 10vw;
     width: 10vw;
