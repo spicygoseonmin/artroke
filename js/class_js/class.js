@@ -12,8 +12,10 @@ window.addEventListener("load", function () {
   function updateSwiperSpaceBetween_a() {
     if (window.innerWidth <= 768) {
       sw_class_mainimg.params.spaceBetween = 7; // 너비가 560px 이하일 때 간격 7
+      sw_class_mainimg.params.slidesPerView = 1.2; // 너비가 560px 이하일 때 간격 7
     } else {
       sw_class_mainimg.params.spaceBetween = 16; // 기본 간격 16
+      sw_class_mainimg.params.slidesPerView = 1.8; // 너비가 560px 이하일 때 간격 7
     }
     sw_class_mainimg.update(); // 변경 사항 업데이트
   }
