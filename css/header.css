@@ -695,7 +695,7 @@
 
 @media screen and (max-width: 320px) {
   #loginIcon {
-    width: 25px;
+    width: 2;
     height: 25px;
     border-radius: 50%;
     overflow: hidden;
@@ -828,10 +828,13 @@
   }
   .header-left {
     height: 70%;
-    width: 23%;
+    width: 19%;
     position: relative;
     display: flex;
     align-items: center;
+    /* top: 50%; */
+    /* left: 7%; */
+    /* transform: translate(-50%); */
     margin: auto 0;
   }
   #cateBar {
