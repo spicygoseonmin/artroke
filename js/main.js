@@ -302,7 +302,7 @@ window.addEventListener("load", function () {
         let tag = `
         <div class="swiper-slide">
             <a href="${item.link}" class="banner-img">
-                <img src="${imgSrc}" alt="배너 이미지">
+                <img src="${imgSrc}" alt="배너 이미지" class="banner-img_pic">
             </a>
         </div>
         `;
