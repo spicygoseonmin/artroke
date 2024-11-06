@@ -30,4 +30,15 @@ window.addEventListener("load", function () {
   updateSwiperSpaceBetween_a(); // 처음 로드될 때도 적용
   window.addEventListener("resize", updateSwiperSpaceBetween_b);
   updateSwiperSpaceBetween_b(); // 처음 로드될 때도 적용
+
+  const c_bi_more_btn = this.document.querySelector(".c_bi_more_btn");
+  const class_itd = this.document.querySelector(".class_itd");
+  c_bi_more_btn.addEventListener("click", function () {
+    class_itd.classList.toggle("show_active");
+    if (class_itd.classList.contains("show_active")) {
+      c_bi_more_btn.innerHTML = "접어두기";
+    } else {
+      c_bi_more_btn.innerHTML = "더보기";
+    }
+  });
 });
